@@ -1,0 +1,57 @@
+<nav class="main-nav" [ngClass]="{ 'visible': showSidebar }">
+  <ul>
+    <li [class.active]="index === 1"><a href="#agenda">Agenda</a></li>
+    <li [class.active]="index === 2"><a href="#about">About Me</a></li>
+    <li [class.active]="index === 4"><a href="#hobbys">Hobbys</a></li>
+    <li [class.active]="index === 5"><a href="#doings">Doings</a></li>
+    <li [class.active]="index === 6"><a href="#learnings">Learnings</a></li>
+    <li [class.active]="index === 7"><a href="#future">Future</a></li>
+  </ul>
+</nav>
+
+
+<div class="background">
+
+  <div class="scroll-container">
+
+    <div class="page" >
+      <app-start-page></app-start-page>
+    </div>
+
+    <div class="page" id="agenda">
+      <app-agenda></app-agenda>
+    </div>
+    
+    <div class="page" id="about">
+      <app-about-me-page></app-about-me-page>
+    </div>
+
+    	<div class="autoshow page">
+        <app-arrow/>
+      </div>
+
+    <div class="page" id="hobbys">
+      <app-hobbys></app-hobbys>
+    </div>
+
+    <div class="page autoBlurReversed" id="doings">
+      <app-doings-page></app-doings-page>
+  </div>
+
+  
+    <div class="autoBlurLearningPage page" id="learnings">
+      <div class="autoBlurReversed">
+      <div class="slideUp">
+      <app-learnings-page></app-learnings-page>
+    </div>
+  </div>
+  </div>
+
+
+    <div class="page" id="future">
+      <app-futuer-plans-page></app-futuer-plans-page>
+    </div>
+  </div>
+
+
+</div>

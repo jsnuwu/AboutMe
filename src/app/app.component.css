@@ -1,0 +1,164 @@
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 1rem 2rem;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    pointer-events: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .main-nav li.active a {
+    color: #9e6fe2;
+    border-bottom: 2px solid #9e6fe2;
+    padding-bottom: 0.2rem;
+  }
+  
+
+  .main-nav.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .main-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .main-nav a:hover {
+    color: #9e6fe2;
+  }
+  
+
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
+.background{
+    background: radial-gradient(#634a66, #231b28);
+    color: #c3b3d8;
+}
+
+.autoshow {
+    animation: autoShowAnimation;
+    animation-timeline: view();
+}
+
+.autoshowreverse {
+    animation: autoShowAnimation reverse;
+    animation-timeline: view();
+}
+
+@keyframes autoShowAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+
+    40% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.autoBlur {
+    animation: autoBlurAnimation both;
+    animation-timeline: view();
+    flex-wrap: wrap;
+}
+
+@keyframes autoBlurAnimation {
+    0% {
+        filter: blur(40px);
+    }
+
+    50% {
+        filter: blur(0);
+    }
+}
+.autoBlurReversed {
+    animation: blurOutOnScroll both;
+    animation-timeline: view();
+    animation-range: exit 20% exit 100%;
+}
+
+@keyframes blurOutOnScroll {
+    0% {
+        filter: blur(0px);
+    }
+    100% {
+        filter: blur(20px);
+    }
+}
+
+
+.scroll-container {
+    scroll-behavior: smooth;
+}
+
+
+.page {
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+}
+
+.slideUp{
+    animation: slideUpAnimation 1.2s ease-out both;
+    animation-timeline: view();
+}
+
+@keyframes slideUpAnimation {
+    0% {
+        transform: translateY(400px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.autoBlurLearningPage{
+    animation: autoBlurLearningPage both;
+    animation-timeline: view();
+    flex-wrap: wrap;
+}
+
+@keyframes autoBlurLearningPage {
+    0% {
+        filter: blur(20px);
+    }
+
+    50% {
+        filter: blur(0);
+    }
+}

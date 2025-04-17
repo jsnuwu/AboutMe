@@ -1,0 +1,82 @@
+
+  section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    text-align: center;
+    background-image: url('/assets/images/startview/sky.jpg');
+    background-size: cover;      
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+ 
+  
+.start-title{
+    font-size: 10rem;
+    color: #ffffff;
+    text-shadow: 0 0 15px #b280f0, 0 0 25px #9e6fe2;
+}
+
+.start-text{
+    font-size: 3.0rem;
+    color: #ffffff;
+    text-shadow: 0 0 15px #b280f0, 0 0 25px #9e6fe2;
+    animation: fadeIn 1s ease-in forwards;
+    margin-top: -120px;
+
+}
+
+.glow-fade-in{
+    animation: fadeIn 1s ease-in forwards;
+}
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  .flicker-in {
+    animation: flicker-section 2.2s ease-in-out;
+    filter: blur(2px);
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes flicker-section {
+    0%   { opacity: 0; filter: blur(4px);  }
+    20%  { opacity: 0.4; filter: blur(2px); }
+    50%  { opacity: 0.6; filter: blur(1px); }
+    80%  { opacity: 0.8; }
+    100% { opacity: 1; filter: blur(0);  }
+  }
+
+  .zoom-section {
+    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1), 
+                opacity 0.6s cubic-bezier(0.25, 0.8, 0.25, 1), 
+                filter 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+    will-change: transform, opacity, filter;
+    transform-origin: center center;
+    z-index: 1;
+  }
+  
+  
+  .zooming-out {
+    transform: scale(0.90);
+    opacity: 0.6;
+    filter: blur(2px) brightness(0.9);
+  }
+  
+  .zooming-out2 {
+    transform: scale(0.80);
+    opacity: 0.6;
+    filter: blur(2px) brightness(0.9);
+  }
+
+  .zooming-out3 {
+    transform: scale(0.75);
+    opacity: 0.6;
+    filter: blur(2px) brightness(0.9);
+  }
