@@ -59,6 +59,8 @@
 .background{
     background: radial-gradient(#634a66, #231b28);
     color: #c3b3d8;
+    height: auto;
+    
 }
 
 .autoshow {
@@ -160,5 +162,31 @@
 
     50% {
         filter: blur(0);
+    }
+}
+
+
+
+
+.autoshowPlanet {
+    animation: autoShowAnimationPlanet;
+    animation-timeline: view();
+
+}
+
+@keyframes autoShowAnimationPlanet {
+    0% {
+        opacity: 0;
+        transform: translateY(200px) scale(0);
+    }
+
+    40% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
     }
 }

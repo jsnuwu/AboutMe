@@ -31,7 +31,7 @@ import { EndPageComponent } from "./slides/end-page/end-page.component";
 export class AppComponent implements AfterViewInit {
   title = 'praesi';
   index = 0;
-  totalPages = 8;
+  totalPages = 9;
   observer!: IntersectionObserver;
   showSidebar = false; 
 
