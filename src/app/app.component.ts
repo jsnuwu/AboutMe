@@ -8,6 +8,7 @@ import { FutuerPlansPageComponent } from "./slides/futuer-plans-page/futuer-plan
 import { CommonModule } from '@angular/common';
 import { HobbysComponent } from "./slides/hobbys/hobbys.component";
 import { ArrowComponent } from "./slides/arrow/arrow.component";
+import { EndPageComponent } from "./slides/end-page/end-page.component";
 
 @Component({
   selector: 'app-root',
@@ -21,7 +22,8 @@ import { ArrowComponent } from "./slides/arrow/arrow.component";
     LearningsPageComponent,
     FutuerPlansPageComponent,
     HobbysComponent,
-    ArrowComponent
+    ArrowComponent,
+    EndPageComponent
 ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],

@@ -1,0 +1,7 @@
+.end-section{
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 20rem;
+}
