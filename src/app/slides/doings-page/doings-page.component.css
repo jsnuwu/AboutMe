@@ -21,6 +21,12 @@
     text-shadow: 0 0 10px #9e6fe2;
 }
 
+.lilText{
+font-size: 1.5rem;
+text-align: left;
+margin-left: 10rem;
+}
+
 
 .doings-grid {
     display: grid;
@@ -37,10 +43,10 @@
 
 .profler-card {
     width: 500px;
-    height: 550px;
+    height: 600px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 3%;
-    margin-top: 8rem;
+    margin-top: 2rem;
 }
 
 .profiler-icon {
@@ -51,14 +57,14 @@
 
 .angular-card{
     width: 500px;
-    height: 550px;
+    height: 600px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 3%;
     margin-bottom: 12rem;
 }
 
 .angular-icon {
-    max-width: 60%;
+    max-width: 45%;
     height: auto;
 }
 

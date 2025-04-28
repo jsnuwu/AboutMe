@@ -17,8 +17,8 @@
   }
   
   .main-nav li.active a {
-    color: #9e6fe2;
-    border-bottom: 2px solid #9e6fe2;
+    color: #d5a1ff;
+    border-bottom: 2px solid #d5a1ff;
     padding-bottom: 0.2rem;
   }
   
@@ -46,7 +46,7 @@
   }
   
   .main-nav a:hover {
-    color: #9e6fe2;
+    color: #d5a1ff;
   }
   
 
