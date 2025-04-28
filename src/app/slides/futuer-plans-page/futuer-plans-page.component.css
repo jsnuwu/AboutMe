@@ -47,7 +47,7 @@
     0%{
         filter: blur(40px);
     }
-    50%{
+    35%{
         filter:blur(0);
     }
 }
