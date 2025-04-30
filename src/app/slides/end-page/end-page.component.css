@@ -9,17 +9,9 @@
 }
 
 .end-title {
-    font-size: 10rem;
+    font-size: 9rem;
     font-weight: 700;
-    margin-bottom: 2rem;
-    text-align: center;
-    color: #ffffff;
-}
-
-.end-text {
-    font-size: 3rem;
-    font-weight: 500;
-    margin-top: -1rem;
+    margin-bottom: 4rem;
     text-align: center;
     color: #ffffff;
 }
@@ -40,7 +32,7 @@
     margin: auto;
     position: relative;
     isolation: isolate;
-    transform: scale(10) translateY(50px);
+    transform: scale(9.5) translateY(50px);  
     opacity: 0.2;
     top: -4rem;
 }

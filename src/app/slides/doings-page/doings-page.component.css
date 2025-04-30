@@ -24,15 +24,21 @@
 .lilText{
 font-size: 1.5rem;
 text-align: left;
-margin-left: 10rem;
+margin-left: 3rem;
 }
 
+.lilLilText{
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 7rem;
+}
 
 .doings-grid {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-gap: 10rem;
+    grid-gap: 16rem;
     align-items: center;
+    margin-left: 15rem;
 }
 
 .item-left,
@@ -46,7 +52,8 @@ margin-left: 10rem;
     height: 600px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 3%;
-    margin-top: 2rem;
+    margin-bottom: 12rem;
+    margin-top: 3rem;
 }
 
 .profiler-icon {
@@ -60,7 +67,8 @@ margin-left: 10rem;
     height: 600px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 3%;
-    margin-bottom: 12rem;
+    margin-top: 0rem;
+
 }
 
 .angular-icon {
