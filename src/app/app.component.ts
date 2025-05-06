@@ -23,7 +23,7 @@ import { EndPageComponent } from "./slides/end-page/end-page.component";
     FutuerPlansPageComponent,
     HobbysComponent,
     ArrowComponent,
-    EndPageComponent
+    EndPageComponent,
 ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],

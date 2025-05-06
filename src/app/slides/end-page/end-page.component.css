@@ -3,7 +3,7 @@
     position: relative;
     text-align: center;
     flex-direction: column;
-    margin-top: 20rem;
+    margin-top: 12rem;
     z-index: 2;
 
 }
@@ -83,4 +83,18 @@ animation: float 3s ease-in-out infinite;
     left: -65px;
     top: -3px;
     
+}
+
+.float-wrapper {
+  animation: float2 3s ease-in-out infinite;
+  display: inline-block;
+}
+
+@keyframes float2 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }

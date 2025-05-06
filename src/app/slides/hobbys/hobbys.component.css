@@ -18,7 +18,7 @@
     grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 45px;
     position: absolute;
-    right: 170px;
+    right: 330px;
     z-index: 0;
 }
 
@@ -56,8 +56,9 @@ img{
 
 .two-pics-container {
     display: flex;
-    gap: 25px; 
-    height: 743.2px; 
+    gap: 40px; 
+    height: 943.2px;
+    width: auto; 
 }
 
 .pic1-half {
@@ -70,13 +71,13 @@ img{
 }
 
 .pic2 {
-    height: 320px;
-    width: 827px;
+    height: 500px;
+    width: 980px;
 }
 
 .pic3, .pic4 {
-    height: 387.8px;
-    width: 400.8px;
+    height: 407.8px;
+    width: 470.8px;
     margin-top: 30px;
 }
 
@@ -85,8 +86,8 @@ position: absolute;
 box-shadow: none;
 width: 12%;
 height: 36%;
-margin-left: -75.2rem;
-margin-top: 39.2rem;
+margin-left: -92rem;
+margin-top: 47.6rem;
 }
 
 .autoshow {
