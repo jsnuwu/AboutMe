@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
 import { HobbysComponent } from "./slides/hobbys/hobbys.component";
 import { ArrowComponent } from "./slides/arrow/arrow.component";
 import { EndPageComponent } from "./slides/end-page/end-page.component";
+import { OldProjectsComponent } from "./slides/old-projects/old-projects.component";
 
 @Component({
   selector: 'app-root',
@@ -24,6 +25,7 @@ import { EndPageComponent } from "./slides/end-page/end-page.component";
     HobbysComponent,
     ArrowComponent,
     EndPageComponent,
+    OldProjectsComponent
 ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
