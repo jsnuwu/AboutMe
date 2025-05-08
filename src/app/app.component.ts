@@ -42,6 +42,10 @@ export class AppComponent implements AfterViewInit {
     this.observeSections();
   }
 
+  get isDoingsVisible(): boolean {
+    return this.index === 5; 
+  }
+
   observeSections() {
     const pages = document.querySelectorAll('.page');
 

@@ -57,11 +57,15 @@
   
 
 .background{
-    background: radial-gradient(#a4597f, #231b28);
+    background: radial-gradient(#a4597f, #563344);
     color: #c3b3d8;
     height: auto;
-    
+    transition: background 1s ease-in-out;
 }
+
+.background.doings-active {
+    background: radial-gradient(circle at 70% 30%, #2447a5, transparent 90%);
+  }
 
 .autoshow {
     animation: autoShowAnimation;
