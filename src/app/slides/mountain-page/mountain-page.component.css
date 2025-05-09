@@ -385,73 +385,6 @@
 }
 
 
-
-
-::ng-deep .light-mode .scene {
-  background: linear-gradient(to top, #87CEFA, #E0FFFF); 
-}
-
-::ng-deep .light-mode .sky {
-  background: radial-gradient(circle at 70% 30%, #b3e0ff, transparent 50%);
-}
-
-::ng-deep .light-mode .moon {
-  background: -webkit-linear-gradient(to right, #fcbb04, #fffc00);
-  background: linear-gradient(to right, #fcbb04, #fffc00);
-}
-
-::ng-deep .light-mode .moon2 {
-  display: none; 
-}
-
-::ng-deep .light-mode .moon3 {
-  display: none; 
-}
-
-::ng-deep .light-mode .stars {
-  display: none; 
-}
-
-::ng-deep .light-mode .fields {
-  background: linear-gradient(to top, #90EE90, #32CD32); 
-}
-
-::ng-deep .light-mode .mountain {
-  border-bottom: 380px solid #7f8c8d; 
-}
-
-::ng-deep .light-mode .mountain-top {
-display: none;
-}
-
-::ng-deep .light-mode .cloud {
-  background: rgba(255, 255, 255, 0.6); 
-}
-
-::ng-deep .light-mode .time-button {
-  background-color: #f39c12; 
-  color: black;
-}
-
-::ng-deep .light-mode .back-button {
-  background-color: #f39c12; 
-  color: black;
-}
-
-::ng-deep .light-mode .deutsch {
-  background-color: #f39c12; 
-  color: black;
-}
-
-::ng-deep .light-mode .english {
-  background-color: #f39c12; 
-  color: black;
-}
-
-::ng-deep .light-mode .headline{
-  color: black;
-}
-
 @media screen and (max-width: 768px) {
   .mountain {
     border-left-width: 200px;
@@ -501,3 +434,31 @@ display: none;
   }
 }
 
+.sky, .fields, .mountain {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.show-sky {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.show-cloud {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.show-fields {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.show-mountain {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}

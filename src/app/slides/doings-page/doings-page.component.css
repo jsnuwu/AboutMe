@@ -114,16 +114,13 @@ margin-top: 3rem;
 }
 
 
-.background-mountain {
+/*.background-mountain {
     transform: scaleX(0);
-    transform-origin:  left;
+    transform-origin:  center;
     transition: transform 1.5s ease-out, opacity 2s ease-out;
-  }
-  
-  .doings-bar-container.show-mountain .background-mountain {
+} */
+
+/*.doings-bar-container.show-mountain .background-mountain {
     transform: scaleX(1);
     opacity: 0.6;
-  }
-  
-  
-  
+} */
