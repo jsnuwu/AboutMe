@@ -56,16 +56,30 @@
   }
   
 
-.background{
+  .background {
+    position: relative;
     background: radial-gradient(#a4597f, #563344);
     color: #c3b3d8;
-    height: auto;
-    transition: background 1s ease-in-out;
 }
 
-.background.doings-active {
+.background::before {
+    content: '';
+    position: absolute;
+    inset: 0;
     background: radial-gradient(circle at 70% 30%, #2447a5, transparent 90%);
-  }
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 0;
+}
+
+.background.doings-active::before {
+    opacity: 1;
+}
+
+.background > * {
+    position: relative;
+    z-index: 1;
+}
 
 .autoshow {
     animation: autoShowAnimation;
