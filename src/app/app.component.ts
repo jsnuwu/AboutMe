@@ -9,7 +9,11 @@ import { CommonModule } from '@angular/common';
 import { HobbysComponent } from "./slides/hobbys/hobbys.component";
 import { ArrowComponent } from "./slides/arrow/arrow.component";
 import { EndPageComponent } from "./slides/end-page/end-page.component";
-import { OldProjectsComponent } from "./slides/old-projects/old-projects.component";
+import { CalculatorComponent } from "./slides/old-projects/calculator/calculator.component";
+import { ConwayComponent } from "./slides/old-projects/conway/conway.component";
+import { ClickerComponent } from "./slides/old-projects/clicker/clicker.component";
+import { EastereggComponent } from "./slides/old-projects/easteregg/easteregg.component";
+
 
 @Component({
   selector: 'app-root',
@@ -25,7 +29,10 @@ import { OldProjectsComponent } from "./slides/old-projects/old-projects.compone
     HobbysComponent,
     ArrowComponent,
     EndPageComponent,
-    OldProjectsComponent
+    CalculatorComponent,
+    ConwayComponent,
+    ClickerComponent,
+    EastereggComponent
 ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
@@ -33,7 +40,7 @@ import { OldProjectsComponent } from "./slides/old-projects/old-projects.compone
 export class AppComponent implements AfterViewInit {
   title = 'praesi';
   index = 0;
-  totalPages = 9;
+  totalPages = 14;
   observer!: IntersectionObserver;
   showSidebar = false; 
 

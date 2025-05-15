@@ -3,7 +3,7 @@
     position: relative;
     text-align: center;
     flex-direction: column;
-    margin-top: 12rem;
+    margin-top: 28rem;
     z-index: 2;
 
 }
@@ -34,7 +34,7 @@
     isolation: isolate;
     transform: scale(9.5) translateY(50px);  
     opacity: 0.2;
-    top: -4rem;
+    top: 12rem;
 }
 
 .rings{

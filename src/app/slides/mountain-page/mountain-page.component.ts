@@ -18,7 +18,7 @@ let timeouts: number[] = [];
 
 const handleScroll = () => {
   const sectionRect = section.getBoundingClientRect();
-  const isVisible = sectionRect.top < window.innerHeight - 50 && sectionRect.bottom > 0;
+  const isVisible = sectionRect.top < window.innerHeight - 500 && sectionRect.bottom > 0;
 
   timeouts.forEach(id => clearTimeout(id));
   timeouts = [];

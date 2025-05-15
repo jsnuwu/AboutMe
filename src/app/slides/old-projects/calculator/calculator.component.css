@@ -1,0 +1,10 @@
+.calculator-gif{
+    width: 35%;
+    height: auto;
+    display: block;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    margin-left: 20rem;
+    margin-top: -50rem;
+}

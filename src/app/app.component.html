@@ -1,35 +1,37 @@
-<nav class="main-nav" [ngClass]="{ 'visible': showSidebar }">
+<nav class="main-nav" [ngClass]="{ visible: showSidebar }">
   <ul>
     <li [class.active]="index === 1"><a href="#agenda">Agenda</a></li>
     <li [class.active]="index === 2"><a href="#about">Über mich</a></li>
     <li [class.active]="index === 4"><a href="#hobbys">Hobbys</a></li>
-    <li [class.active]="index === 5"><a href="#doings">Aktuelle Tätigkeit</a></li>
+    <li [class.active]="index === 5">
+      <a href="#doings">Aktuelle Tätigkeit</a>
+    </li>
     <li [class.active]="index === 6"><a href="#learnings">Erlerntes</a></li>
-    <li [class.active]="index === 7"><a href="#future">Zukunftsziele</a></li>
-    <li [class.active]="index === 8"><a href="#end">Ende</a></li>
+    <li [class.active]="index === 7">
+      <a href="#oldprojects">Alte Projekte</a>
+    </li>
+    <li [class.active]="index === 12"><a href="#future">Zukunftsziele</a></li>
+    <li [class.active]="index === 13"><a href="#end">Ende</a></li>
   </ul>
 </nav>
 
-
 <div class="background" [ngClass]="{ 'doings-active': index === 5 }">
-
   <div class="scroll-container">
-
-    <div class="page" >
+    <div class="page">
       <app-start-page></app-start-page>
     </div>
 
     <div class="page" id="agenda">
       <app-agenda></app-agenda>
     </div>
-    
+
     <div class="page" id="about">
       <app-about-me-page></app-about-me-page>
     </div>
 
-    	<div class="autoshow page">
-        <app-arrow/>
-      </div>
+    <div class="autoshow page">
+      <app-arrow />
+    </div>
 
     <div class="page" id="hobbys">
       <app-hobbys></app-hobbys>
@@ -41,29 +43,52 @@
       </div>
     </div>
 
-
-  
     <div class="autoBlurLearningPage page" id="learnings">
       <div class="autoBlurReversed">
-      <div class="slideUp">
-      <app-learnings-page></app-learnings-page>
+        <div class="slideUp">
+          <app-learnings-page></app-learnings-page>
+        </div>
+      </div>
     </div>
-  </div>
-  </div>
 
+    <div class="page" id="oldprojects">
+      <div class="oldProjects-title">
+        <h1 class="autoshowPlanet">Alte Projekte</h1>
+      </div>
+    </div>
 
-  <app-old-projects></app-old-projects>
+    <div class="page" id="calculator">
+      <div class="slideUp">
+        <app-calculator></app-calculator>
+      </div>
+    </div>
+
+    <div class="page" id="conway">
+      <div class="slideUp">
+        <app-conway></app-conway>
+      </div>
+    </div>
+
+    <div class="page" id="clicker">
+      <div class="slideUp">
+        <app-clicker></app-clicker>
+      </div>
+    </div>
+
+    <div class="page" id="easteregg">
+      <div class="slideUp">
+        <app-easteregg></app-easteregg>
+      </div>
+    </div>
 
     <div class="page" id="future">
       <app-futuer-plans-page></app-futuer-plans-page>
     </div>
 
     <div class="autoBlur">
-    <div class="page autoshowPlanet" id="end">
-      <app-end-page/>
+      <div class="page autoshowPlanet" id="end">
+        <app-end-page />
+      </div>
     </div>
   </div>
-  </div>
-
-
 </div>
