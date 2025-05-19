@@ -1,0 +1,20 @@
+.loading-container {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+
+}
+
+.clicker-gif{
+    width: 80rem;
+    height: auto;
+    display: block;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    margin-right: 4rem;
+}
+
+.loading-title{
+    font-size: 7rem;
+    color: #ffffff;}

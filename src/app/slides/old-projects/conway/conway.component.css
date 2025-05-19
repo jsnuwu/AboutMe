@@ -1,10 +1,21 @@
+.conway-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row; 
+}
+
+.conway-title {
+    font-size: 6rem;
+    color: #ffffff;
+    margin-left: 6rem;
+}
+
 .conway-gif{
-    width: 35%;
+    width: 50rem;
     height: auto;
     display: block;
     border-radius: 1rem;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
-    margin-left: 80rem;
-    margin-top: 10rem;
+    margin-left: 10rem;
 }

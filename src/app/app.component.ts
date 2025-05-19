@@ -11,8 +11,7 @@ import { ArrowComponent } from "./slides/arrow/arrow.component";
 import { EndPageComponent } from "./slides/end-page/end-page.component";
 import { CalculatorComponent } from "./slides/old-projects/calculator/calculator.component";
 import { ConwayComponent } from "./slides/old-projects/conway/conway.component";
-import { ClickerComponent } from "./slides/old-projects/clicker/clicker.component";
-import { EastereggComponent } from "./slides/old-projects/easteregg/easteregg.component";
+import { loadingComponent } from "./slides/old-projects/loading/loading.component";
 
 
 @Component({
@@ -31,8 +30,8 @@ import { EastereggComponent } from "./slides/old-projects/easteregg/easteregg.co
     EndPageComponent,
     CalculatorComponent,
     ConwayComponent,
-    ClickerComponent,
-    EastereggComponent
+    loadingComponent,
+    loadingComponent
 ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
