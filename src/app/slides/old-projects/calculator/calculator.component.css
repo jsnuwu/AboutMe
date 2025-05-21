@@ -1,7 +1,7 @@
 .calculator-container {
     display: flex;
     align-items: center;
-    margin-left: 20rem;
+    margin-left: 10rem;
 }
 
 .calculator-gif {
@@ -11,7 +11,7 @@
     border-radius: 1rem;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
-    margin-right: 14rem;
+    margin-right: 12rem;
 }
 
 .calculator-title {
