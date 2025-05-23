@@ -226,3 +226,37 @@
     text-shadow: 0 0 10px #9e6fe2;
     text-align: center;
 }
+
+.autoshowLeft {
+  animation: autoShowAnimationLeft;
+  animation-timeline: view(); 
+}
+
+@keyframes autoShowAnimationLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px) scale(0.8); 
+  }
+  40%,
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.autoshowRight {
+  animation: autoShowAnimationRight;
+  animation-timeline: view(); 
+}
+
+@keyframes autoShowAnimationRight {
+  0% {
+    opacity: 0;
+    transform: translateX(200px) scale(0.8); 
+  }
+  40%,
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
