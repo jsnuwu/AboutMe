@@ -39,7 +39,7 @@ import { loadingComponent } from "./slides/old-projects/loading/loading.componen
 export class AppComponent implements AfterViewInit {
   title = 'praesi';
   index = 0;
-  totalPages = 14;
+  totalPages = 13;
   observer!: IntersectionObserver;
   showSidebar = false; 
 

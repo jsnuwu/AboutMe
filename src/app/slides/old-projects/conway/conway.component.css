@@ -19,3 +19,20 @@
     transition: transform 0.3s ease;
     margin-left: 10rem;
 }
+
+.autoshowRight {
+  animation: autoShowAnimationRight;
+  animation-timeline: view(); 
+}
+
+@keyframes autoShowAnimationRight {
+  0% {
+    opacity: 0;
+    transform: translateX(200px) scale(0.8); 
+  }
+  40%,
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}

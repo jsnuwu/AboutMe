@@ -10,8 +10,8 @@
     <li [class.active]="index === 7">
       <a href="#oldprojects">Alte Projekte</a>
     </li>
-    <li [class.active]="index === 12"><a href="#future">Zukunftsziele</a></li>
-    <li [class.active]="index === 13"><a href="#end">Ende</a></li>
+    <li [class.active]="index === 11"><a href="#future">Zukunftsziele</a></li>
+    <li [class.active]="index === 12"><a href="#end">Ende</a></li>
   </ul>
 </nav>
 
@@ -54,29 +54,25 @@
     <div class="page centered-content" id="oldprojects">
       <div class="oldProjects-title">
         <h1 class="autoshowPlanet">Alte Projekte</h1>
+      </div>
     </div>
-    </div>
-    <div class="autoshowLeft">
-    <div class="page" id="calculator">
+      <div class="page " id="calculator">
         <app-calculator></app-calculator>
     </div>
-    </div>
 
-    <div class="autoshowRight">
-    <div class="page" id="conway">
+      <div class="page" id="conway">
         <app-conway></app-conway>
     </div>
-</div>
 
-    <div class="autoshowLeft">
-    <div class="page" id="clicker">
+      <div class="page" id="clicker">
         <app-loading></app-loading>
     </div>
-</div>
+
     <!--<div class="page" id="easteregg">
         <app-easteregg></app-easteregg>
     </div>
-  -->
+    -->
+
     <div class="page" id="future">
       <app-futuer-plans-page></app-futuer-plans-page>
     </div>
