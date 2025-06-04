@@ -34,20 +34,20 @@
   
   .name {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: 700;
   }
   
   .role {
     margin-top: 0.5rem;
     color: #ccc;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     letter-spacing: 1px;
   }
   
   .about {
     margin: 1rem ;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 1.5;
   }
   

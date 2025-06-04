@@ -56,21 +56,21 @@ img {
 .two-pics-container {
   display: flex;
   gap: 40px;
-  height: 943.2px;
+  height: 750px;
 }
 
 .pic1-half {
-  width: calc(40% - -40px);
+  width: calc(36% - -40px);
 }
 
 .pic2 {
-  height: 500px;
-  width: 980px;
+  height: 400px;
+  width: 784px;
 }
 
 .pic3, .pic4 {
-  height: 407.8px;
-  width: 470.8px;
+  height: 326px;
+  width: 376px;
   margin-top: 30px;
 }
 

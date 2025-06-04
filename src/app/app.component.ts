@@ -7,7 +7,6 @@ import { LearningsPageComponent } from "./slides/learnings-page/learnings-page.c
 import { FutuerPlansPageComponent } from "./slides/futuer-plans-page/futuer-plans-page.component";
 import { CommonModule } from '@angular/common';
 import { HobbysComponent } from "./slides/hobbys/hobbys.component";
-import { ArrowComponent } from "./slides/arrow/arrow.component";
 import { EndPageComponent } from "./slides/end-page/end-page.component";
 import { CalculatorComponent } from "./slides/old-projects/calculator/calculator.component";
 import { ConwayComponent } from "./slides/old-projects/conway/conway.component";
@@ -26,7 +25,6 @@ import { loadingComponent } from "./slides/old-projects/loading/loading.componen
     LearningsPageComponent,
     FutuerPlansPageComponent,
     HobbysComponent,
-    ArrowComponent,
     EndPageComponent,
     CalculatorComponent,
     ConwayComponent,
@@ -39,7 +37,7 @@ import { loadingComponent } from "./slides/old-projects/loading/loading.componen
 export class AppComponent implements AfterViewInit {
   title = 'praesi';
   index = 0;
-  totalPages = 13;
+  totalPages = 12;
   observer!: IntersectionObserver;
   showSidebar = false; 
 
@@ -49,7 +47,7 @@ export class AppComponent implements AfterViewInit {
   }
 
   get isDoingsVisible(): boolean {
-    return this.index === 5; 
+    return this.index === 4; 
   }
 
   observeSections() {

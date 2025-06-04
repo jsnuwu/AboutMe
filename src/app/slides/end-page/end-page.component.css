@@ -3,7 +3,7 @@
     position: relative;
     text-align: center;
     flex-direction: column;
-    margin-top: 28rem;
+    margin-top: 24rem;
     z-index: 2;
 
 }
@@ -11,7 +11,6 @@
 .end-title {
     font-size: 9rem;
     font-weight: 700;
-    margin-bottom: 4rem;
     text-align: center;
     color: #ffffff;
 }
@@ -34,7 +33,6 @@
     isolation: isolate;
     transform: scale(9.5) translateY(50px);  
     opacity: 0.2;
-    top: 12rem;
 }
 
 .rings{

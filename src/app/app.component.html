@@ -2,20 +2,20 @@
   <ul>
     <li [class.active]="index === 1"><a href="#agenda">Agenda</a></li>
     <li [class.active]="index === 2"><a href="#about">Über mich</a></li>
-    <li [class.active]="index === 4"><a href="#hobbys">Hobbys</a></li>
-    <li [class.active]="index === 5">
+    <li [class.active]="index === 3"><a href="#hobbys">Hobbys</a></li>
+    <li [class.active]="index === 4">
       <a href="#doings">Aktuelle Tätigkeit</a>
     </li>
-    <li [class.active]="index === 6"><a href="#learnings">Erlerntes</a></li>
-    <li [class.active]="index === 7">
+    <li [class.active]="index === 5"><a href="#learnings">Erlerntes</a></li>
+    <li [class.active]="index === 6">
       <a href="#oldprojects">Alte Projekte</a>
     </li>
-    <li [class.active]="index === 11"><a href="#future">Zukunftsziele</a></li>
-    <li [class.active]="index === 12"><a href="#end">Ende</a></li>
+    <li [class.active]="index === 10"><a href="#future">Zukunftsziele</a></li>
+    <li [class.active]="index === 11"><a href="#end">Ende</a></li>
   </ul>
 </nav>
 
-<div class="background" [ngClass]="{ 'doings-active': index === 5 }">
+<div class="background" [ngClass]="{ 'doings-active': index === 4 }">
   <div class="scroll-container">
     <div class="page">
       <app-start-page></app-start-page>
@@ -29,9 +29,7 @@
       <app-about-me-page></app-about-me-page>
     </div>
 
-    <div class="autoshow page">
-      <app-arrow />
-    </div>
+
 
     <div class="page" id="hobbys">
       <app-hobbys></app-hobbys>
