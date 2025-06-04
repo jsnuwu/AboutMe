@@ -38,8 +38,8 @@ text-shadow: 0 0 10px #9e6fe2;
 .firstCircle,
 .secondCircle,
 .thirdCircle {
-  width: 600px;
-  height: 600px;
+  width: 450px;
+  height: 450px;
   background-color: #5c374b;
   border-radius: 50%;
   display: flex;
