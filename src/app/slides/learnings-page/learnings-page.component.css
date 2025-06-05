@@ -1,94 +1,98 @@
-
-.learnings-background {
-    z-index: -1;
-    opacity: 0.5;
-    pointer-events: none;
-    
+.learnings-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  padding-top: 3vh;
+  max-width: min(90vw, 800px);
+  margin: 0 auto;
+  box-sizing: border-box;
 }
+
 
 .learnings-section {
-    position: relative;
-    z-index: 1;
-    max-width: 900px;
-    margin: 5rem auto;
-    padding: 9rem 1rem;
-    border-radius: 20px;
-    color: #ffffff;
-    text-align: center;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    margin-top: 200px;
-    
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border-radius: clamp(1rem, 2vw, 20px);
+  padding: clamp(3rem, 10vw, 12rem);
+  color: #fff;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+  text-align: center;
 }
 
+
+
 .learnings-title {
-    font-size: 3.8rem;
-    margin: 0;
-    margin-top: 2rem;
+  font-size: clamp(2rem, 5vw, 3.8rem);
+  margin-top: clamp(1rem, 4vw, 2rem);
+  margin-bottom: 0;
+  white-space: nowrap;
 }
 
 .learnings-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 2.5rem;
-    line-height: 2;
-    text-align: left;
-    max-width: 500px;
-    width: 100%;
-    margin-top: 4rem;
+  list-style: none;
+  padding: 0;
+  margin: clamp(2rem, 4vw, 4rem) 0 0;
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
+  line-height: 1.6;
+  text-align: left;
+  max-width: 500px;
+  width: 100%;
 }
 
-.scene {
-    position: absolute;
-    top: -10rem; 
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    z-index: -2;
-    display: flex;
-    justify-content: center;
-    background-color: #00d9ff05;
-}
-
-.scene2 {
-    position: absolute;
-    top: 0rem; 
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    z-index: -2;
-    display: flex;
-    justify-content: center;
+.scene, .scene2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -2;
+  display: flex;
+  justify-content: center;
+  background-color: #00d9ff05;
 }
 
 .sky {
-    position: absolute;
-    width: 100%;
-    height: 60%;
-    
+  position: absolute;
+  width: 100%;
+  height: 60%;
 }
 
 .moon {
-    position: absolute;
-    top: 20%;
-    left: 80%;
-    width: 130px;
-    height: 130px;
-    background: radial-gradient(circle at 30% 30%, #a6a6a6, #d4d4d4);
-    border-radius: 50%;
-    box-shadow: 0 0 30px 15px rgba(194, 187, 187, 0.8);
-    z-index: 1;
+  position: absolute;
+  top: 20%;
+  left: 80%;
+  width: clamp(80px, 10vw, 130px);
+  height: clamp(80px, 10vw, 130px);
+  background: radial-gradient(circle at 30% 30%, #a6a6a6, #d4d4d4);
+  border-radius: 50%;
+  box-shadow: 0 0 30px 15px rgba(194, 187, 187, 0.8);
+  z-index: 1;
     animation: fadeIn 2s ease-in forwards, moonGlow 3s infinite alternate;
 }
+
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  animation: twinkle 0.5s infinite alternate;
+}
+
+.star {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0;
+animation: fadeIn 2s ease-in forwards;
+
+}
+
 
 @keyframes moonGlow {
     0% {
@@ -98,27 +102,6 @@
     100% {
         box-shadow: 0 0 60px 25px rgba(255, 255, 255, 0.6);
     }
-}
-
-.stars {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: -1;
-    animation: twinkle 0.5s infinite alternate;
-
-}
-
-.star {
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    background: white;
-    border-radius: 50%;
-    opacity: 0;
-    animation: fadeIn 2s ease-in forwards;
-    animation-fill-mode: forwards;
 }
 
 @keyframes fadeIn {
@@ -142,3 +125,13 @@
     }
 }
 
+.learnings-background {
+  position: fixed;
+  top: -3vh;
+  left: 0;
+  width: 100%;
+  height: calc(100vh + 3vh); 
+  z-index: -1; 
+  opacity: 0.5;
+  pointer-events: none;
+}

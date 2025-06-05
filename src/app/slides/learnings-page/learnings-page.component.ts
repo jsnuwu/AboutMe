@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit  } from '@angular/core';
 
 @Component({
   selector: 'app-learnings-page',
   imports: [],
   templateUrl: './learnings-page.component.html',
-  styleUrl: './learnings-page.component.css'
+styleUrls: ['./learnings-page.component.css'] 
 })
-export class LearningsPageComponent {
+export class LearningsPageComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     const observer = new IntersectionObserver((entries) => {
@@ -17,19 +17,18 @@ export class LearningsPageComponent {
             ? [entry.target as HTMLElement]
             : entry.target.querySelectorAll('.moon') as NodeListOf<HTMLElement>;
   
-          stars.forEach((star) => {
+          stars.forEach(star => {
             star.style.animation = 'none';
-            void  star.offsetHeight;
-            star.style.animation = '';
+
+            void star.offsetHeight;
+            star.style.animation = ''; 
           });
   
-          moons.forEach((moon) => {
+          moons.forEach(moon => {
             moon.style.animation = 'none';
-            moon.offsetHeight;
+            void moon.offsetHeight;
             moon.style.animation = '';
           });
-
-          
         }
       });
     }, { threshold: 0.1 });
@@ -38,6 +37,4 @@ export class LearningsPageComponent {
       observer.observe(starsBlock);
     });
   }
-  
-
 }

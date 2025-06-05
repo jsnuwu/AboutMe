@@ -1,38 +1,43 @@
 .conway-container {
     display: flex;
     align-items: center;
-    flex-direction: row; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .conway-title {
-    font-size: 6rem;
+    font-size: clamp(2.5rem, 4vw, 6rem);
     color: #ffffff;
-    margin-left: 6rem;
+    margin-left: clamp(0.5rem, 3vw, 6rem);
+    max-width: 90vw;
+    text-align: center; /* für kleine Screens sinnvoll */
 }
 
-.conway-gif{
-    width: 50rem;
+.conway-gif {
+    width: clamp(20rem, 40vw, 50rem);
     height: auto;
     display: block;
     border-radius: 1rem;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
-    margin-left: 10rem;
+    margin-left: clamp(0.5rem, 6vw, 10rem);
+    max-width: 90vw;
 }
 
 .autoshowRight {
-  animation: autoShowAnimationRight;
-  animation-timeline: view(); 
+    animation: autoShowAnimationRight;
+    animation-timeline: view();
 }
 
 @keyframes autoShowAnimationRight {
-  0% {
-    opacity: 0;
-    transform: translateX(200px) scale(0.8); 
-  }
-  40%,
-  100% {
-    opacity: 1;
-    transform: translateX(0) scale(1);
-  }
+    0% {
+        opacity: 0;
+        transform: translateX(200px) scale(0.8);
+    }
+    40%, 100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
 }

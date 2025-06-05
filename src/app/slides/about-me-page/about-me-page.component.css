@@ -1,102 +1,102 @@
-.about-section{
-  height: 100vh;
-  padding: 2rem 1rem;
+.about-section {
+  min-height: 100vh;
+  padding: clamp(1rem, 4vw, 2rem) clamp(0.5rem, 2vw, 1rem);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 20px;
-  max-width: 800px;
-  margin: 3rem auto;
-  margin-top: 5rem;
+  border-radius: clamp(1rem, 2vw, 20px);
+  max-width: min(90vw, 800px);
+  margin: clamp(2rem, 5vw, 3rem) auto clamp(3rem, 6vw, 5rem);
+  box-sizing: border-box;
 }
-  
-  .profile-card {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(20px);
-    border-radius: 20px;
-    padding: 10rem;
-    width: 800px;
-    color: #fff;
-    text-align: center;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-  }
-  
-  .profile-img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    margin-top: -4rem;
-    margin-bottom: 1rem;
-    border: 2px solid #fff;
-    object-fit: cover;
-  }
-  
-  .name {
-    margin: 0;
-    font-size: 2.8rem;
-    font-weight: 700;
-  }
-  
-  .role {
-    margin-top: 0.5rem;
-    color: #ccc;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-  }
-  
-  .about {
-    margin: 1rem ;
-    font-size: 1.6rem;
-    line-height: 1.5;
-  }
-  
-  .about h4 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-  }
-  
+
+.profile-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: clamp(1rem, 2vw, 20px);
+  padding: clamp(2rem, 8vw, 10rem);
+  width: min(90vw, 800px);
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+}
+
+.profile-img {
+  width: clamp(150px, 25vw, 300px);
+  height: clamp(150px, 25vw, 300px);
+  border-radius: 50%;
+  margin-top: clamp(-2rem, -5vw, -4rem);
+  margin-bottom: clamp(0.5rem, 2vw, 1rem);
+  border: 2px solid #fff;
+  object-fit: cover;
+}
+
+.name {
+  margin: 0;
+  font-size: clamp(1.5rem, 4vw, 2.8rem);
+  font-weight: 700;
+}
+
+.role {
+  margin-top: clamp(0.25rem, 1vw, 0.5rem);
+  color: #ccc;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  letter-spacing: 1px;
+}
+
+.about {
+  margin: clamp(0.5rem, 3vw, 1rem);
+  font-size: clamp(1rem, 3vw, 1.6rem);
+  line-height: 1.5;
+}
+
+.about h4 {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  margin-bottom: clamp(0.25rem, 1vw, 0.5rem);
+  font-weight: bold;
+}
+
 .about p {
-    margin: 2rem ;
-  }
+  margin: clamp(1rem, 4vw, 2rem);
+}
 
-  .profile-bar-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 5;
-    transition: opacity 1s ease, transform 0.8s ease;
-  }
-  
-  .profile-bar {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 100vh;
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: width 1.5s ease-out;
-    transform: translate(-50%, -50%);
-  }
-  
-  .profile-content {
-    opacity: 0;
-    transition: opacity 1s ease;
-    transform: translateY(20px);
-    transition: opacity 1s ease, transform 0.8s ease;
-  }
+.profile-bar-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  transition: opacity 1s ease, transform 0.8s ease;
+}
 
-  .profile-bar-container.show-bar .profile-bar {
-    width: 100%; 
-    opacity: 1;
-  }
-  
-  .profile-bar-container.show-bar .profile-content {
-    opacity: 1; 
-    transform: translateY(0);
-  }
+.profile-bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: width 1.5s ease-out;
+  transform: translate(-50%, -50%);
+}
+
+.profile-content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 0.8s ease;
+}
+
+.profile-bar-container.show-bar .profile-bar {
+  width: 100%;
+  opacity: 1;
+}
+
+.profile-bar-container.show-bar .profile-content {
+  opacity: 1;
+  transform: translateY(0);
+}

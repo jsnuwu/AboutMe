@@ -1,51 +1,63 @@
-
 .headline {
-  position: relative;
-  margin-top: 6rem;
-  margin-bottom: -2rem;
-  z-index: 20;
+  width: 90vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: clamp(6rem, 10vh, 8rem); 
 }
 
 .hobbys-title {
-  font-size: 8rem;
-  margin: 0 0 0 14.3rem;
+  font-size: clamp(2.5rem, 8vw, 8rem);
   text-shadow: 0 0 10px #9e6fe2;
+  margin: 0 auto;
+  max-width: 90vw;
+  text-align: center;
+  color: #f2eaff;
+  z-index: 10;
 }
 
 .hobby-grid {
-  position: absolute;
   display: grid;
-  grid-template-rows: repeat(1, 1fr);
-  grid-column-gap: 45px;
-  z-index: 0;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: clamp(0.5rem, 2vw, 20px); 
+  padding: 0 clamp(8rem, 20vw, 16rem); 
+  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+  overflow-x: hidden;
 }
 
 .image-1-hero {
-  grid-area: 1 / 2 / 3 / 3;
-  transform: translateX(130px);
+  grid-column: span 1;
+  grid-row: span 2;
+  width: 100%;
+  max-width: 900px;
 }
 
 .image-2-hero {
-  grid-area: 1 / 3 / 2 / 6;
+  grid-column: span 2;
+  grid-row: span 1;
+  width: 100%;
+  max-width: 700px;
 }
 
-.image-3-hero {
-  grid-area: 2 / 3 / 3 / 4;
-}
-
+.image-3-hero,
 .image-4-hero {
-  grid-area: 2 / 4 / 3 / 4;
+  width: 100%;
+  max-width: 350px;
+  align-self: start;
+  margin-top: -1rem; 
 }
 
 .grid-item h2 {
   color: #f2eaff;
-  font-size: 1.3rem;
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
   margin: 0;
   text-align: center;
 }
 
 img {
-  border-radius: 20px;
+  border-radius: clamp(0.5rem, 2vw, 20px);
   box-shadow: 0 0 10px #9e6fe2;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   width: 100%;
@@ -55,28 +67,39 @@ img {
 
 .two-pics-container {
   display: flex;
-  gap: 40px;
-  height: 750px;
+  gap: clamp(1rem, 4vw, 40px);
+  flex-wrap: nowrap;
+  justify-content: center;
+  height: clamp(30rem, 80vh, 750px);
+  width: 100%;
 }
 
 .pic1-half {
-  width: calc(36% - -40px);
+  width: 80%;
+  height: 100%;
+  border-radius: clamp(0.5rem, 2vw, 20px);
+  box-shadow: 0 0 10px #9e6fe2;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .pic2 {
-  height: 400px;
-  width: 784px;
+  height: clamp(15rem, 40vh, 400px);
+  width: clamp(20rem, 60vw, 784px);
+  margin-left: clamp(3rem, 8vw, 100px); 
 }
 
-.pic3, .pic4 {
-  height: 326px;
-  width: 376px;
-  margin-top: 30px;
+.pic3,
+.pic4 {
+  height: clamp(12rem, 35vh, 326px);
+  width: clamp(12rem, 30vw, 376px);
+  margin-left: clamp(3rem, 8vw, 127px); 
+  margin-top: 1rem; 
 }
 
 .autoshow {
   animation: autoShowAnimation;
-  animation-timeline: view(); 
+  animation-timeline: view();
 }
 
 @keyframes autoShowAnimation {
@@ -84,7 +107,7 @@ img {
     opacity: 0;
     transform: translateY(200px) scale(0.3);
   }
-  40%,
+  30%,
   100% {
     opacity: 1;
     transform: translateY(0) scale(1);

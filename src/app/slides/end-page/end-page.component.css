@@ -1,98 +1,37 @@
-
 .end-section {
-    position: relative;
-    text-align: center;
-    flex-direction: column;
-    margin-top: 24rem;
-    z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 2rem;
+  z-index: 2;
+  overflow: hidden;
 
 }
 
 .end-title {
-    font-size: 9rem;
-    font-weight: 700;
-    text-align: center;
-    color: #ffffff;
-}
-
-.planet-shadow {
-    position: absolute;
-    width: 200px;
-    height: 180px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(0, 0, 0, 10), transparent 70%);
-    filter: blur(60px);
-    transform: translate(-50%, -50%);
-    z-index: -2;
-  }
-
-.main {
-    width: 70px;
-    margin: auto;
-    position: relative;
-    isolation: isolate;
-    transform: scale(9.5) translateY(50px);  
-    opacity: 0.2;
-}
-
-.rings{
-    position: absolute;
-    width: 200px;
-    height: 100px;
-    border-radius: 150px 150px 0 0;
-    background: radial-gradient(circle at 50% 100%,
-            transparent 30%, #69e9d6 40%, #404D44 50%, #44867c 60%, #404D44 70%, transparent);
-            
-}
-
-#saturn {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background: linear-gradient(80deg, #69e9d6, #404D44, #000000);
-    box-shadow: 0 0 100px rgba(105, 233, 214, 0.8);
-}
-
-.float-animation{
-animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-1px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-
-#ring1 {
-    transform: rotateX(80deg);
-    top: -20px;
-    left: -65px;
-    z-index: -1;
-}
-
-#ring2 {
-    transform: rotateX(-100deg);
-    left: -65px;
-    top: -3px;
-    
+  font-size: clamp(4rem, 10vw, 9rem);
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 0 15px #9e6fe2, 0 0 30px #6f42c1;
+  margin: 0;
 }
 
 .float-wrapper {
-  animation: float2 3s ease-in-out infinite;
-  display: inline-block;
+    margin-top: 20rem;
+  animation: floatUpDown 4s ease-in-out infinite;
 }
 
-@keyframes float2 {
+
+@keyframes floatUpDown {
   0%, 100% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-15px);
   }
 }
+
