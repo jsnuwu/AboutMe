@@ -8,3 +8,11 @@ body {
   font-family: "Consolas", sans-serif;
   overflow-x: hidden;
 }
+
+@media (max-width: 600px) {
+  html {
+width: 100vw;
+  overflow-x: hidden;
+
+  }
+}
