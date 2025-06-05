@@ -3,8 +3,40 @@ html {
 }
 
 body {
-  
-  font-family: "Consolas", sans-serif;
   margin: 0;
   padding: 0;
+  font-family: "Consolas", sans-serif;
+  overflow-x: hidden;
+}
+
+.page {
+    height: 100vh;
+    max-width: 100vw; 
+    scroll-snap-align: start;
+
+}
+
+/* Font-Size skalieren */
+@media (max-width: 1536px) {
+  
+  html { font-size: 75%;
+   
+ }
+  .page { height: 90vh;
+  max-width: 90vw; }   /*FJSDPKFSDKFJDSPFJDS*/ 
+}
+
+@media (max-width: 1024px) {
+  html { font-size: 70%; }
+  .page { height: 90vh; }
+}
+
+@media (max-width: 768px) {
+  html { font-size: 65%; }
+  .page { height: 85vh; }
+}
+
+@media (max-width: 480px) {
+  html { font-size: 60%; }
+  .page { height: 80vh; }
 }

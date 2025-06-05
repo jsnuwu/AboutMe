@@ -155,12 +155,13 @@
   position: relative;
 }
 
+/*
 .page {
     height: 100vh;
     width: 100%;
     scroll-snap-align: start;
 }
-
+*/
 .slideUp{
     animation: slideUpAnimation 1.2s ease-out both;
     animation-timeline: view();
