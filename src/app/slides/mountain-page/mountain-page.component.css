@@ -121,6 +121,7 @@
     border-bottom: 120px solid #ceeaf6;
     z-index: 2;
 }
+
 .mountain-cap-1, .mountain-cap-2, .mountain-cap-3 {
     position: absolute;
     top: 110px;
@@ -128,6 +129,7 @@
     border-right: 35px solid transparent;
     border-top: 35px solid #ceeaf6;
 }
+
 .mountain-cap-1 { left: -85px; }
 .mountain-cap-2 { left: -35px; }
 .mountain-cap-3 { left: 15px; }
@@ -384,55 +386,6 @@
   transition: background-color 0.3s ease;
 }
 
-
-@media screen and (max-width: 768px) {
-  .mountain {
-    border-left-width: 200px;
-    border-right-width: 200px;
-    border-bottom-width: 250px;
-  }
-
-  .mountain-top {
-    right: -63px;
-    border-left-width: 63px;
-    border-right-width: 63px;
-    border-bottom-width: 80px;
-  }
-
-  .headline {
-    margin-left: 3%;
-    margin-top: 3%;
-  }
-
-  .underline {
-    margin-left: 4%;
-  }
-
-  .back-button, .deutsch, .english {
-    padding: 12px 24px;
-    font-size: 1.1em;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .mountain {
-    border-left-width: 150px;
-    border-right-width: 150px;
-    border-bottom-width: 180px;
-  }
-
-  .mountain-top {
-    right: -47px;
-    border-left-width: 47px;
-    border-right-width: 47px;
-    border-bottom-width: 60px;
-  }
-
-  .cloud {
-    width: 100px;
-    height: 50px;
-  }
-}
 
 .sky, .fields, .mountain {
   opacity: 0;
