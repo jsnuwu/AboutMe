@@ -9,10 +9,10 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width: 600px) {
-  html {
-width: 100vw;
-  overflow-x: hidden;
-
-  }
+@media (max-width: 947px) {
+  *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 }

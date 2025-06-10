@@ -38,18 +38,19 @@
 .firstCircle,
 .secondCircle,
 .thirdCircle {
-  flex: 0 0 clamp(300px, 30vw, 450px); 
-  height: clamp(300px, 30vw, 450px);
-  width: clamp(300px, 30vw, 450px);
-
-  background-color: #5c374b;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
-  box-sizing: border-box;
+    flex: 0 0 clamp(300px, 30vw, 450px);
+    height: clamp(300px, 30vw, 286px);
+    width: clamp(300px, 30vw, 450px);
+    background-color: #5c374b;
+    border-radius: 27px;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    padding: 32px;
 }
 
 @media (max-width: 980px) {

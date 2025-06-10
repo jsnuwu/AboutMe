@@ -11,6 +11,8 @@ import { EndPageComponent } from "./slides/end-page/end-page.component";
 import { CalculatorComponent } from "./slides/old-projects/calculator/calculator.component";
 import { ConwayComponent } from "./slides/old-projects/conway/conway.component";
 import { loadingComponent } from "./slides/old-projects/loading/loading.component";
+import { InvestmentcalculatorComponent } from "./slides/old-projects/investmentcalculator/investmentcalculator.component";
+import { TaskmanagerComponent } from "./slides/old-projects/taskmanager/taskmanager.component";
 
 
 @Component({
@@ -29,7 +31,9 @@ import { loadingComponent } from "./slides/old-projects/loading/loading.componen
     CalculatorComponent,
     ConwayComponent,
     loadingComponent,
-    loadingComponent
+    loadingComponent,
+    InvestmentcalculatorComponent,
+    TaskmanagerComponent
 ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
@@ -37,7 +41,7 @@ import { loadingComponent } from "./slides/old-projects/loading/loading.componen
 export class AppComponent implements AfterViewInit {
   title = 'praesi';
   index = 0;
-  totalPages = 12;
+  totalPages = 16;
   observer!: IntersectionObserver;
   showSidebar = false; 
 
@@ -47,7 +51,7 @@ export class AppComponent implements AfterViewInit {
   }
 
   get isDoingsVisible(): boolean {
-    return this.index === 4; 
+    return this.index === 5; 
   }
 
   observeSections() {
@@ -75,6 +79,8 @@ export class AppComponent implements AfterViewInit {
 
     pages.forEach(page => this.observer.observe(page));
   }
+
+
 
   @HostListener('document:keydown', ['$event'])
   handleArrowKeys(event: KeyboardEvent) {

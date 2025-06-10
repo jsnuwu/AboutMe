@@ -3,19 +3,28 @@
     <li [class.active]="index === 1"><a href="#agenda">Agenda</a></li>
     <li [class.active]="index === 2"><a href="#about">Über mich</a></li>
     <li [class.active]="index === 3"><a href="#hobbys">Hobbys</a></li>
-    <li [class.active]="index === 4">
+    <li [class.active]="index === 4"><a href="#learnings">Erlerntes</a></li>
+
+    <li [class.active]="index === 5">
       <a href="#doings">Aktuelle Tätigkeit</a>
     </li>
-    <li [class.active]="index === 5"><a href="#learnings">Erlerntes</a></li>
+
     <li [class.active]="index === 6">
-      <a href="#oldprojects">Alte Projekte</a>
+      <a href="#projectNow">Derzeitiges Projekte</a>
     </li>
-    <li [class.active]="index === 10"><a href="#future">Zukunftsziele</a></li>
-    <li [class.active]="index === 11"><a href="#end">Ende</a></li>
+    <li [class.active]="index === 8">
+      <a href="#sideprojects">sidequest Projekte</a>
+    </li>
+    <li [class.active]="index === 11">
+      <a href="#oldprojects">vergangene Projekte</a>
+    </li>
+
+    <li [class.active]="index === 14"><a href="#future">Zukunftsziele</a></li>
+    <li [class.active]="index === 15"><a href="#end">Ende</a></li>
   </ul>
 </nav>
 
-<div class="background" [ngClass]="{ 'doings-active': index === 4 }">
+<div class="background" [ngClass]="{ 'doings-active': index === 5 }">
   <div class="scroll-container">
     <div class="page">
       <app-start-page></app-start-page>
@@ -29,16 +38,8 @@
       <app-about-me-page></app-about-me-page>
     </div>
 
-
-
     <div class="page" id="hobbys">
       <app-hobbys></app-hobbys>
-    </div>
-
-    <div class="page autoBlurLearningPage" id="doings">
-      <div class="autoBlurReversed">
-        <app-doings-page></app-doings-page>
-      </div>
     </div>
 
     <div class="autoBlurLearningPage page" id="learnings">
@@ -49,27 +50,51 @@
       </div>
     </div>
 
-    <div class="page centered-content" id="oldprojects">
-      <div class="oldProjects-title">
-        <h1 class="autoshowPlanet">Alte Projekte</h1>
+    <div class="page autoBlurLearningPage" id="doings">
+      <div class="autoBlurReversed">
+        <app-doings-page></app-doings-page>
       </div>
     </div>
-      <div class="page " id="calculator">
-        <app-calculator></app-calculator>
+
+    <!-- Project now -->
+    <div class="page centered-content" id="projectNow">
+      <div class="Projects-title">
+        <h1 class="autoshowPlanet">Derzeitiges Projekte</h1>
+      </div>
     </div>
 
-      <div class="page" id="conway">
-        <app-conway></app-conway>
+    <div class="page" id="clicker">
+      <app-loading></app-loading>
     </div>
 
-      <div class="page" id="clicker">
-        <app-loading></app-loading>
+    <!-- Sidequest project -->
+    <div class="page centered-content" id="sideprojects">
+      <div class="Projects-title">
+        <h1 class="autoshowPlanet">sidequeust Projekte</h1>
+      </div>
     </div>
 
-    <!--<div class="page" id="easteregg">
-        <app-easteregg></app-easteregg>
+    <div class="page" id="taskmanager">
+      <app-taskmanager></app-taskmanager>
     </div>
-    -->
+
+    <div class="page" id="investmentcalculator">
+      <app-investmentcalculator></app-investmentcalculator>
+    </div>
+
+    <!-- Old Projects Section -->
+    <div class="page centered-content" id="oldprojects">
+      <div class="Projects-title">
+        <h1 class="autoshowPlanet">Vergangene Projekte</h1>
+      </div>
+    </div>
+    <div class="page" id="calculator">
+      <app-calculator></app-calculator>
+    </div>
+
+    <div class="page" id="conway">
+      <app-conway></app-conway>
+    </div>
 
     <div class="page" id="future">
       <app-futuer-plans-page></app-futuer-plans-page>

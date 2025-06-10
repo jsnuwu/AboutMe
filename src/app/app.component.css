@@ -89,7 +89,7 @@ html {
   scroll-snap-align: start;
 }
 
-#oldprojects, #calculator, #conway, #clicker, #future .oldProjects-title,
+#projects, #calculator, #conway, #clicker, #future .oldProjects-title,
 #hobbys {
   height: 100vh;
   display: flex;
@@ -103,14 +103,13 @@ html {
   padding-bottom: clamp(2rem, 6vh, 6rem);
 }
 */
-.oldProjects-title {
+.Projects-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
   margin: 0;
   text-shadow: 0 0 10px #9e6fe2;
   text-align: center;
 }
 
-/* Animations */
 .autoshow {
   animation: autoShowAnimation;
   animation-timeline: view();

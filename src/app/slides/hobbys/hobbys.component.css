@@ -113,3 +113,35 @@ img {
     transform: translateY(0) scale(1);
   }
 }
+
+@media (max-width: 947px) {
+  .hobbys-title  {
+    margin-top: 5rem;
+  }
+
+  .hobby-grid {
+    padding-left: 0;
+    padding-right: 0;
+    justify-items: start; 
+  }
+
+  .pic1-half {
+    width: 50%;
+    height: 50%; 
+    margin-left: 10px;
+    margin-bottom: -30rem;
+  }
+  
+  .pic2 {
+    width: 50%;
+    height: 50%;
+  }
+
+  .pic3, .pic4{
+  width: 60%;
+  height: 60%;
+  }
+
+}
+
+
