@@ -1,4 +1,4 @@
-.conway-container {
+.InvestmentCalculator-container {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -7,7 +7,7 @@
     margin: 0 auto;
 }
 
-.conway-title {
+.InvestmentCalculator-title {
     font-size: clamp(2.5rem, 4vw, 6rem);
     color: #ffffff;
     margin-left: clamp(0.5rem, 3vw, 6rem);
@@ -15,7 +15,7 @@
     text-align: center; 
 }
 
-.conway-gif {
+.InvestmentCalculator-gif {
     width: clamp(17rem, 37vw, 44rem);
     height: auto;
     display: block;

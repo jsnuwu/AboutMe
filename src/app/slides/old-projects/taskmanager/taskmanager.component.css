@@ -1,4 +1,4 @@
-.loading-container {
+.TaskManager-container {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -6,7 +6,7 @@
     margin: 0 auto;
 }
 
-.clicker-gif {
+.TaskManager-gif {
     width: clamp(17rem, 37vw, 44rem);
     height: auto;
     display: block;
@@ -17,7 +17,7 @@
     max-width: 90vw;
 }
 
-.loading-title {
+.TaskManager-title {
     font-size: clamp(2.5rem, 5vw, 7rem);
     color: #ffffff;
     text-align: center;

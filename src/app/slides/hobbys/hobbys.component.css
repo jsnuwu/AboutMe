@@ -6,14 +6,15 @@
 }
 
 .hobbys-title {
-  font-size: clamp(2.5rem, 8vw, 8rem);
+  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  color: #fafafa;
   text-shadow: 0 0 10px #9e6fe2;
   margin: 0 auto;
   max-width: 90vw;
   text-align: center;
-  color: #f2eaff;
   z-index: 10;
 }
+
 
 .hobby-grid {
   display: grid;

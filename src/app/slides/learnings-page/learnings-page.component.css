@@ -23,11 +23,16 @@
 
 
 .learnings-title {
-  font-size: clamp(2rem, 5vw, 3.8rem);
+  font-size: clamp(2rem, 6vw, 3.8rem);
+  color: #fafafa;
+  text-shadow: 0 0 10px #9e6fe2;
   margin-top: clamp(1rem, 4vw, 2rem);
   margin-bottom: 0;
   white-space: nowrap;
 }
+
+
+
 
 .learnings-list {
   list-style: none;

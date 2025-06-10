@@ -89,7 +89,7 @@ html {
   scroll-snap-align: start;
 }
 
-#projects, #calculator, #conway, #clicker, #future .oldProjects-title,
+#projects, #calculator, #conway, #clicker, #future .projects-title,
 #hobbys {
   height: 100vh;
   display: flex;
@@ -103,9 +103,10 @@ html {
   padding-bottom: clamp(2rem, 6vh, 6rem);
 }
 */
-.Projects-title {
+.projects-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
   margin: 0;
+  color: #fafafa;
   text-shadow: 0 0 10px #9e6fe2;
   text-align: center;
 }

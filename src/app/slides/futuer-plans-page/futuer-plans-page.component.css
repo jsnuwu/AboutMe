@@ -19,8 +19,8 @@
 }
 
 .future-title {
-  font-size: clamp(3rem, 5vw, 8rem);
-  color: #f2eaff;
+  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  color: #fafafa;
   text-shadow: 0 0 10px #9e6fe2;
   margin-bottom: 1rem;
 }
