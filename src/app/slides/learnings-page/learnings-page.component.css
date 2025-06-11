@@ -1,62 +1,123 @@
 .learnings-wrapper {
+  position: relative;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; 
-  padding-top: 3vh;
-  max-width: min(90vw, 800px);
+  max-width: 100%;
   margin: 0 auto;
-  box-sizing: border-box;
-}
-
-
-.learnings-section {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(20px);
-  border-radius: clamp(1rem, 2vw, 20px);
-  padding: clamp(3rem, 10vw, 12rem);
+  padding-top: 3vh;
   color: #fff;
-  box-shadow: 0 0 30px rgba(0,0,0,0.3);
-  text-align: center;
+  overflow: hidden;
 }
-
-
 
 .learnings-title {
+  text-align: center;
   font-size: clamp(2rem, 6vw, 3.8rem);
-  color: #fafafa;
-  text-shadow: 0 0 10px #9e6fe2;
-  margin-top: clamp(1rem, 4vw, 2rem);
-  margin-bottom: 0;
-  white-space: nowrap;
+  margin-bottom: 3rem;
+  text-shadow: 0 0 15px #9e6fe2;
+  position: relative;
+  z-index: 10;
 }
 
-
-
-
-.learnings-list {
-  list-style: none;
-  padding: 0;
-  margin: clamp(2rem, 4vw, 4rem) 0 0;
-  font-size: clamp(1.2rem, 3vw, 2.5rem);
-  line-height: 1.6;
-  text-align: left;
-  max-width: 500px;
-  width: 100%;
-}
-
-.scene, .scene2 {
+.cloud {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  z-index: -2;
+  width: clamp(150px, 20vw, 300px);
+  height: clamp(75px, 10vw, 150px);
+  aspect-ratio: 2 / 1;
+  --g: radial-gradient(50% 50%, #000 98%, #0000) no-repeat;
+  mask: var(--g) 100% 100%/30% 60%, var(--g) 70% 0/50% 100%,
+    var(--g) 0 100%/36% 68%, var(--g) 27% 18%/26% 40%,
+    linear-gradient(#000 0 0) bottom/67% 58% no-repeat;
+  background: rgba(255, 255, 255, 0.12);
+  animation: cloudGlow 3s ease-in-out infinite;
   display: flex;
+  align-items: center;
   justify-content: center;
-  background-color: #00d9ff05;
+  flex-direction: row;
+  gap: clamp(4px, 1vw, 12px);
+  padding: clamp(8px, 1vw, 12px) clamp(15px, 2vw, 20px);
+  box-sizing: border-box;
+  color: #ddd;
+  font-weight: 600;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  filter: drop-shadow(0 0 4px #9e6fe2);
+  z-index: 5;
+}
+
+.tech-icon {
+  width: clamp(24px, 3vw, 32px);
+  height: clamp(24px, 3vw, 32px);
+  filter: drop-shadow(0 0 2px #9e6fe2);
+  filter: drop-shadow(0 0 2px #9e6fe2);
+  padding-top: clamp(4px, 1.5vw, 30px);
+}
+.tech-label {
+  font-size: clamp(1rem, 2.5vw, 2.5rem);
+  padding-top: clamp(4px, 1.5vw, 30px);
+}
+
+.clouds1 {
+  top: 18%;
+  left: 30%;
+}
+.clouds2 {
+  top: 30%;
+  left: 10%;
+}
+.clouds3 {
+  top: 42%;
+  left: 23%;
+}
+.clouds4 {
+  top: 25%;
+  left: 75%;
+}
+.clouds5 {
+  top: 40%;
+  left: 50%;
+}
+.clouds6 {
+  top: 20%;
+  left: 55%;
+}
+.clouds7 {
+  top: 50%;
+  left: 68%;
+}
+.clouds8 {
+  top: 55%;
+  left: 38%;
+}
+
+@media (max-width: 947px) {
+  .cloud {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .clouds1 {
+    left: 8%;
+  }
+  .clouds2 {
+    left: 5%;
+  }
+  .clouds3 {
+    left: 4%;
+  }
+  .clouds4 {
+    top: 30%;
+    left: 54%;
+  }
+  .clouds5 {
+    left: 45%;
+  }
+  .clouds6 {
+    left: 50%;
+  }
+  .clouds7 {
+    left: 55%;
+  }
+  .clouds8 {
+    left: 15%;
+  }
 }
 
 .sky {
@@ -75,7 +136,7 @@
   border-radius: 50%;
   box-shadow: 0 0 30px 15px rgba(194, 187, 187, 0.8);
   z-index: 1;
-    animation: fadeIn 2s ease-in forwards, moonGlow 3s infinite alternate;
+  animation: fadeIn 2s ease-in forwards, moonGlow 3s infinite alternate;
 }
 
 .stars {
@@ -94,40 +155,38 @@
   background: white;
   border-radius: 50%;
   opacity: 0;
-animation: fadeIn 2s ease-in forwards;
-
+  animation: fadeIn 2s ease-in forwards;
 }
 
-
 @keyframes moonGlow {
-    0% {
-        box-shadow: 0 0 30px 15px rgba(255, 255, 255, 0.8);
-    }
+  0% {
+    box-shadow: 0 0 30px 15px rgba(255, 255, 255, 0.8);
+  }
 
-    100% {
-        box-shadow: 0 0 60px 25px rgba(255, 255, 255, 0.6);
-    }
+  100% {
+    box-shadow: 0 0 60px 25px rgba(255, 255, 255, 0.6);
+  }
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.5);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @keyframes twinkle {
-    0% {
-        opacity: 0.6;
-    }
+  0% {
+    opacity: 0.6;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 .learnings-background {
@@ -135,8 +194,8 @@ animation: fadeIn 2s ease-in forwards;
   top: -3vh;
   left: 0;
   width: 100%;
-  height: calc(100vh + 3vh); 
-  z-index: -1; 
+  height: calc(100vh + 3vh);
+  z-index: -1;
   opacity: 0.5;
   pointer-events: none;
 }

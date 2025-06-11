@@ -3,28 +3,29 @@
     <li [class.active]="index === 1"><a href="#agenda">Agenda</a></li>
     <li [class.active]="index === 2"><a href="#about">Über mich</a></li>
     <li [class.active]="index === 3"><a href="#hobbys">Hobbys</a></li>
-    <li [class.active]="index === 4"><a href="#learnings">Erlerntes</a></li>
 
-    <li [class.active]="index === 5">
+    <li [class.active]="index === 4">
       <a href="#doings">Aktuelle Tätigkeit</a>
     </li>
 
-    <li [class.active]="index === 6">
+    <li [class.active]="index === 5">
       <a href="#projectNow">Derzeitiges Projekte</a>
     </li>
-    <li [class.active]="index === 8">
+    <li [class.active]="index === 7">
       <a href="#sideprojects">Übungsprojekte</a>
     </li>
-    <li [class.active]="index === 11">
+    <li [class.active]="index === 10">
       <a href="#oldprojects">vergangene Projekte</a>
     </li>
+
+        <li [class.active]="index === 13"><a href="#learnings">Erlerntes</a></li>
 
     <li [class.active]="index === 14"><a href="#future">Zukunftsziele</a></li>
     <li [class.active]="index === 15"><a href="#end">Ende</a></li>
   </ul>
 </nav>
 
-<div class="background" [ngClass]="{ 'doings-active': index === 5 }">
+<div class="background" [ngClass]="{ 'doings-active': index === 4 }">
   <div class="scroll-container">
     <div class="page">
       <app-start-page></app-start-page>
@@ -40,16 +41,12 @@
     </div>
 
     <div class="page" id="hobbys">
-      <app-hobbys></app-hobbys>
-    </div>
-
-    <div class="autoBlurLearningPage page" id="learnings">
       <div class="autoBlurReversed">
-        <div class="slideUp">
-          <app-learnings-page></app-learnings-page>
-        </div>
+        <app-hobbys></app-hobbys>
       </div>
     </div>
+
+
 
     <div class="page autoBlurLearningPage" id="doings">
       <div class="autoBlurReversed">
@@ -74,7 +71,7 @@
     <div class="page centered-content" id="sideprojects">
       <div class="title-wrapper">
         <div class="projects-title">
-          <h1 class="autoshowPlanet">Übungsprojekte</h1>
+          <h1 class="autoshowPlanet">Übungs - Projekte</h1>
         </div>
       </div>
     </div>
@@ -101,6 +98,14 @@
 
     <div class="page" id="conway">
       <app-conway></app-conway>
+    </div>
+
+    <div class="autoBlurLearningPage page" id="learnings">
+      <div class="autoBlurReversed">
+        <div class="slideUp">
+          <app-learnings-page></app-learnings-page>
+        </div>
+      </div>
     </div>
 
     <div class="page" id="future">

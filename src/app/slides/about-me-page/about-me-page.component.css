@@ -60,7 +60,7 @@
 }
 
 .about p {
-  margin: clamp(1.25rem, 4vw, 3rem);
+  margin: clamp(1.25rem, 4vw, 1rem);
 }
 
 .profile-bar-container {

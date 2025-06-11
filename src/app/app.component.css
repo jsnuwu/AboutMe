@@ -105,13 +105,16 @@ html {
 }
 */
 .projects-title {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  margin: 0;
+  font-size: clamp(2.5rem, 5vw, 3.8rem);
+  margin: 0 auto;
   color: #fafafa;
   text-shadow: 0 0 10px #9e6fe2;
   text-align: center;
-  margin-top: 0;
+  word-wrap: break-word;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
+
 
 .title-wrapper {
   display: flex;
