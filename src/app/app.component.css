@@ -161,7 +161,7 @@ html {
   0% {
     filter: blur(40px);
   }
-  50% {
+  25% {
     filter: blur(0);
   }
 }
@@ -191,7 +191,7 @@ html {
     transform: translateY(400px);
     opacity: 0;
   }
-  80% {
+  50% {
     transform: translateY(0);
     opacity: 1;
   }
@@ -207,7 +207,7 @@ html {
   0% {
     filter: blur(20px);
   }
-  50% {
+  25% {
     filter: blur(0);
   }
 }
@@ -222,7 +222,7 @@ html {
     opacity: 0;
     transform: translateY(200px) scale(0);
   }
-  40% {
+  30% {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
@@ -263,3 +263,4 @@ html {
     transform: translateX(0) scale(1);
   }
 }
+
