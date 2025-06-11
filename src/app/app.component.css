@@ -29,6 +29,7 @@ html {
 
 .main-nav ul {
   display: flex;
+   flex-wrap: wrap;
   justify-content: center;
   gap: clamp(1rem, 3vw, 2rem);
   list-style: none;
@@ -89,8 +90,8 @@ html {
   scroll-snap-align: start;
 }
 
-#projects, #calculator, #conway, #clicker, #future .projects-title,
-#hobbys {
+#calculator, #conway, #clicker, #future,
+#hobbys, #taskmanager, #investmentcalculator {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -109,7 +110,17 @@ html {
   color: #fafafa;
   text-shadow: 0 0 10px #9e6fe2;
   text-align: center;
+  margin-top: 0;
 }
+
+.title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
 
 .autoshow {
   animation: autoShowAnimation;
