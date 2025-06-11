@@ -91,19 +91,20 @@ html {
 }
 
 #calculator, #conway, #clicker, #future,
-#hobbys, #taskmanager, #investmentcalculator {
+#taskmanager, #investmentcalculator {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
-/*
+
 #hobbys {
-  padding-top: clamp(9rem, 24vh, 18rem);
+  width: 98%;
+  padding-top: clamp(9rem, 24vh, 12rem);
   padding-bottom: clamp(2rem, 6vh, 6rem);
 }
-*/
+
 .projects-title {
   font-size: clamp(2.5rem, 5vw, 3.8rem);
   margin: 0 auto;

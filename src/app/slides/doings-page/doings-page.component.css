@@ -39,7 +39,7 @@
 }
 
 .lilLilText {
-  font-size: clamp(1.1rem, 2.2vw, 1.8rem);
+  font-size: clamp(1rem, 2vw, 1.5rem); /* vorher bis 1.9rem */
   text-align: left;
   width: 100%;
   max-width: 900px;
@@ -57,12 +57,12 @@
 
 .profler-card,
 .angular-card {
-  flex: 1 1 clamp(320px, 32vw, 440px);
-  max-width: clamp(280px, 30vw, 400px);
+  flex: 1 1 clamp(260px, 26vw, 360px);
+  max-width: clamp(240px, 26vw, 360px); 
   aspect-ratio: 1 / 1;
   background: rgba(255, 255, 255, 0.1);
   border-radius: clamp(1rem, 2vw, 2rem);
-  padding: clamp(1rem, 2vw, 2rem);
+  padding: clamp(0.8rem, 1.5vw, 1.5rem);
   box-sizing: border-box;
 }
 
@@ -82,7 +82,7 @@
 }
 
 .doings-text {
-  font-size: clamp(1rem, 2vw, 1.4rem);
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
   line-height: 1.6;
     color: #ccc;
   max-width: 600px;
