@@ -413,3 +413,30 @@
   transform: translateY(0);
   transition-delay: 0.4s;
 }
+
+@media (max-width: 1536px) {
+  .mountain {
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    border-bottom: 300px solid #0f274c;
+    left: 8%;
+  }
+
+  .mountain-top {
+    right: -67.5px; 
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 90px solid #ceeaf6;
+  }
+
+  .mountain-cap-1, .mountain-cap-2, .mountain-cap-3 {
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid #ceeaf6;
+    top: 75px;
+  }
+
+  .mountain-cap-1 { left: -60px; }
+  .mountain-cap-2 { left: -25px; }
+  .mountain-cap-3 { left: 10px; }
+}

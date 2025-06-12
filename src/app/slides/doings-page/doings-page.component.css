@@ -20,7 +20,7 @@
   height: 100%;
   z-index: -1;
   pointer-events: none;
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .doings-title {
@@ -31,7 +31,7 @@
 }
 
 .lilText {
-  font-size: clamp(1.2rem, 2.5vw, 1.9rem);
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
   text-align: left;
   width: 100%;
   max-width: 900px;
@@ -49,7 +49,7 @@
 .doings-grid {
   width: fit-content;
   max-width: none;
-    margin-left: clamp(8rem, 12vw, 20rem);    
+  margin-left: clamp(8rem, 12vw, 25rem);    
   margin-top: clamp(0.5rem, 2vw, 3rem);
   display: flex;
   gap: clamp(3rem, 7vw, 8rem);
@@ -57,8 +57,8 @@
 
 .profler-card,
 .angular-card {
-  flex: 1 1 clamp(260px, 26vw, 360px);
-  max-width: clamp(240px, 26vw, 360px); 
+  flex: 1 1 clamp(250px, 30%, 350px);
+  max-width: clamp(240px, 26vw, 350px); 
   aspect-ratio: 1 / 1;
   background: rgba(255, 255, 255, 0.1);
   border-radius: clamp(1rem, 2vw, 2rem);
@@ -67,17 +67,17 @@
 }
 
 .angular-card {
-  margin-top: clamp(2rem, 5vw, 4rem);
+  margin-top: clamp(2rem, 5vw, 6rem);
 }
 
 .profiler-icon {
-  margin-top: clamp(1rem, 4vw, 3rem);
-  max-width: 80%;
+  margin-top: clamp(1rem, 4vw, 2rem);
+  max-width: 60%;
   height: auto;
 }
 
 .angular-icon {
-  max-width: 50%;
+  max-width: 40%;
   height: auto;
 }
 
@@ -89,20 +89,27 @@
   margin-top: clamp(1rem, 3vw, 2rem);
 }
 
-.doings-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  font-size: clamp(1rem, 2vw, 1.3rem);
-  line-height: 2;
-  text-align: left;
-  max-width: 500px;
-  display: flex;
-  flex-direction: column;
-  gap: clamp(0.5rem, 2vw, 1rem);
-}
 
-.list-1,
-.list-2 {
-  margin-bottom: clamp(0.5rem, 2vw, 1rem);
+
+@media (max-width: 768px) {
+  .doings-grid {
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 6rem;
+  }
+
+  .profler-card,
+  .angular-card {
+    max-width: 80%;
+    flex: 0 0 auto;
+  }
+
+  .angular-card {
+    margin-top: 1rem;
+    max-width: 55%;
+    margin-left: 4rem;
+  }
+
+
 }
