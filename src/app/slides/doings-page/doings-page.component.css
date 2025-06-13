@@ -36,15 +36,10 @@
   width: 100%;
   max-width: 900px;
   margin-top: clamp(1rem, 4vw, 3rem);
+  padding-left: 3rem;     
+  text-indent: -2.9rem;
 }
 
-.lilLilText {
-  font-size: clamp(1rem, 2vw, 1.5rem); /* vorher bis 1.9rem */
-  text-align: left;
-  width: 100%;
-  max-width: 900px;
-  margin-left: clamp(1rem, 5vw, 7rem);
-}
 
 .doings-grid {
   width: fit-content;
@@ -58,7 +53,7 @@
 .profler-card,
 .angular-card {
   flex: 1 1 clamp(250px, 30%, 350px);
-  max-width: clamp(240px, 26vw, 350px); 
+  max-width: clamp(240px, 26vw, 360px); 
   aspect-ratio: 1 / 1;
   background: rgba(255, 255, 255, 0.1);
   border-radius: clamp(1rem, 2vw, 2rem);
@@ -79,6 +74,7 @@
 .angular-icon {
   max-width: 40%;
   height: auto;
+  margin-bottom: -1rem;
 }
 
 .doings-text {

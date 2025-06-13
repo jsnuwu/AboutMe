@@ -1,20 +1,29 @@
 .loading-container {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* ⬅️ Stapelt Titel oben, Bilder darunter */
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: clamp(1rem, 3vw, 2rem);
 }
 
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1rem, 2vw, 3rem);
+  justify-content: center;
+  
+}
+
+
 .clicker-gif {
-    width: clamp(20rem, 50vw, 80rem);
-    height: auto;
-    display: block;
-    border-radius: 1rem;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
-    margin-right: clamp(1rem, 4vw, 8rem);
-    max-width: 90vw;
+width: clamp(20rem, 45vw, 60rem); 
+   height: auto;
+  display: block;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  max-width: 100%;
 }
 
 .loading-title {
@@ -22,6 +31,14 @@
     color: #ffffff;
     text-align: center;
     max-width: 90vw;
+}
+
+.arrow{
+  font-size: clamp(2rem, 4vw, 6rem);
+  color: #ffffff;
+  text-align: center;
+  max-width: 90vw;
+  margin-top: 11rem;
 }
 
 .autoshowLeft {
@@ -38,4 +55,71 @@
         opacity: 1;
         transform: translateX(0) scale(1);
     }
+}
+
+
+
+.autoshowRight {
+    animation: autoShowAnimationRight;
+    animation-timeline: view();
+}
+
+@keyframes autoShowAnimationRight {
+    0% {
+        opacity: 0;
+        transform: translateX(200px) scale(0.8);
+    }
+    40%, 100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+.autoshowPlanet {
+  animation: autoShowAnimationPlanet;
+  animation-timeline: view();
+}
+
+@keyframes autoShowAnimationPlanet {
+  0% {
+    opacity: 0;
+    transform: translateY(200px) scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.autoshowArrow {
+  animation: autoShowAnimationArrow;
+  animation-timeline: view();
+}
+
+@keyframes autoShowAnimationArrow {
+  0% {
+    opacity: 0;
+    transform: translateY(200px) scale(0);
+  }
+
+  40% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .clicker-gif {
+    width: 90vw;
+  }
+
+  .arrow {
+    margin-top: 2rem;
+  }
+
+  .image-row {
+    flex-direction: column;
+    align-items: center;
+  }
 }

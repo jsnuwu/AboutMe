@@ -68,6 +68,7 @@ export class AppComponent implements AfterViewInit {
           const newIndex = Array.from(pages).indexOf(entry.target);
           this.index = newIndex;
 
+          
           this.showSidebar = newIndex >= 1;
 
           pages.forEach((page, idx) => {

@@ -17,7 +17,7 @@
 }
 
 .card-agenda {
-  padding: clamp(2rem, 5vw, 6rem);
+  padding: clamp(2rem, 5vw, 5rem);
   width: min(60vw, 700px);
   border-radius: clamp(1rem, 2vw, 2rem);
   background: rgba(255, 255, 255, 0.1);
@@ -38,7 +38,7 @@
   color: #fafafa;
   text-shadow: 0 0 10px #9e6fe2;
   margin-bottom: clamp(2rem, 5vw, 5rem);
-  margin-top: clamp(-2rem, -4vw, -4rem);
+  margin-top: clamp(-1rem, -2vw, -2rem);
 }
 
 .agenda-list {
