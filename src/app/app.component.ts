@@ -44,6 +44,7 @@ export class AppComponent implements AfterViewInit {
   totalPages = 16;
   observer!: IntersectionObserver;
   showSidebar = false; 
+  
 
   ngAfterViewInit() {
     this.scrollToSection(this.index);
@@ -101,3 +102,4 @@ export class AppComponent implements AfterViewInit {
     }
   }
 }
+
