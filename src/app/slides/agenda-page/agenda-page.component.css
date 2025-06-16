@@ -37,7 +37,7 @@
   font-size: clamp(2.5rem, 6vw, 5.5rem);
   color: #fafafa;
   text-shadow: 0 0 10px #9e6fe2;
-  margin-bottom: clamp(2rem, 5vw, 5rem);
+  margin-bottom: clamp(1rem, 2vw, 2rem);
   margin-top: clamp(-1rem, -2vw, -2rem);
 }
 

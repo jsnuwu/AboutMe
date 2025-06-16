@@ -29,6 +29,8 @@ export class LearningsPageComponent implements AfterViewInit {
             void moon.offsetHeight;
             moon.style.animation = '';
           });
+
+          
         }
       });
     }, { threshold: 0.1 });
