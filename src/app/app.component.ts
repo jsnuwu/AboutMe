@@ -13,6 +13,7 @@ import { ConwayComponent } from "./slides/old-projects/conway/conway.component";
 import { loadingComponent } from "./slides/old-projects/loading/loading.component";
 import { InvestmentcalculatorComponent } from "./slides/old-projects/investmentcalculator/investmentcalculator.component";
 import { TaskmanagerComponent } from "./slides/old-projects/taskmanager/taskmanager.component";
+import { RocketTransitionComponent } from "./rocket-transition/rocket-transition.component";
 
 
 @Component({
@@ -33,7 +34,8 @@ import { TaskmanagerComponent } from "./slides/old-projects/taskmanager/taskmana
     loadingComponent,
     loadingComponent,
     InvestmentcalculatorComponent,
-    TaskmanagerComponent
+    TaskmanagerComponent,
+    RocketTransitionComponent
 ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
@@ -55,32 +57,61 @@ export class AppComponent implements AfterViewInit {
     return this.index === 5; 
   }
 
-  observeSections() {
-    const pages = document.querySelectorAll('.page');
+observeSections() {
+  const pages = document.querySelectorAll('.page');
+  const background = document.querySelector('.background') as HTMLElement;
 
-    const options = {
-      root: null,
-      threshold: 0.6,
-    };
+  const options = {
+    root: null,
+    threshold: 0.6,
+  };
 
-    this.observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const newIndex = Array.from(pages).indexOf(entry.target);
-          this.index = newIndex;
+  let fadeOutTimeout: any;
 
-          
-          this.showSidebar = newIndex >= 1;
+  this.observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        clearTimeout(fadeOutTimeout); 
 
-          pages.forEach((page, idx) => {
-            page.classList.toggle('active', idx === newIndex);
-          });
+        const newIndex = Array.from(pages).indexOf(entry.target);
+        this.index = newIndex;
+        this.showSidebar = newIndex >= 1;
+
+        pages.forEach((page, idx) => {
+          page.classList.toggle('active', idx === newIndex);
+        });
+
+        if (background) {
+          background.classList.remove('doings-active', 'future-active');
+
+          if (newIndex === 4) {
+            background.classList.add('doings-active');
+            background.style.setProperty(
+              '--bg-gradient',
+              'radial-gradient(circle at 70% 30%, #2447a5, transparent 90%)'
+            );
+          } else if (newIndex === 14) {
+            background.classList.add('future-active');
+            background.style.setProperty(
+              '--bg-gradient',
+              'radial-gradient(circle, rgba(158, 128, 38, 1) 6%, rgba(3, 15, 107, 1) 45%)'
+            );
+          } else {
+            fadeOutTimeout = setTimeout(() => {
+              background.style.setProperty('--bg-gradient', '');
+              background.classList.remove('doings-active', 'future-active');
+            }, 600); 
+          }
         }
-      });
-    }, options);
+      }
+    });
+  }, options);
 
-    pages.forEach(page => this.observer.observe(page));
-  }
+  pages.forEach(page => this.observer.observe(page));
+}
+
+
+
 
 
 

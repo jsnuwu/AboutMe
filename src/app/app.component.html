@@ -4,11 +4,7 @@
     <li [class.active]="index === 2"><a href="#about">Über mich</a></li>
     <li [class.active]="index === 3"><a href="#hobbys">Hobbys</a></li>
 
-    <li [class.active]="index === 4">
-      <a href="#doings">Aktuelle Tätigkeit</a>
-    </li>
-
-
+    <li [class.active]="index === 4"><a href="#doings">Aktuelle Tätigkeit</a></li>
 
 <li [class.active]="index === 5 || index === 6">
       <a href="#projectNow">Derzeitiges Projekte</a>
@@ -30,6 +26,7 @@
 </nav>
 
 <div class="background" [ngClass]="{ 'doings-active': index === 4 }">
+
   <div class="scroll-container">
     <div class="page">
       <app-start-page></app-start-page>
@@ -112,9 +109,16 @@
       </div>
     </div>
 
-    <div class="page" id="future">
-      <app-futuer-plans-page></app-futuer-plans-page>
-    </div>
+
+
+
+<div class="page" id="future">
+  <div class="future-wrapper" id="futureSection">
+    <app-futuer-plans-page></app-futuer-plans-page>
+    <app-rocket-transition targetSelector="#future"></app-rocket-transition>
+  </div>
+</div>
+
 
     
     <div class="autoBlur">

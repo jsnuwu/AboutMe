@@ -1,4 +1,11 @@
+.future-wrapper {
+  background-color: #0a0a23;
+  transition: background-color 1s ease;
+}
 
+.future-wrapper.launched {
+  background-color: #011627; 
+}
 
 .future-section {
   height: 100%;
