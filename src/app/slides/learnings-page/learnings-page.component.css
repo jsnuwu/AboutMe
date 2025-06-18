@@ -43,9 +43,7 @@
   animation-name: cloudGlow, floatCloud;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-
-    animation: fadeIn 1.5s ease-in forwards, floatCloud 3s ease-in-out infinite;
-
+  animation: fadeIn 1.5s ease-in forwards, floatCloud 3s ease-in-out infinite;
 }
 
 .tech-icon {
@@ -109,7 +107,6 @@
   animation-duration: 6.3s;
 }
 
-
 @keyframes floatCloud {
   0% {
     transform: translateY(0px);
@@ -121,7 +118,6 @@
     transform: translateY(0px);
   }
 }
-
 
 @media (max-width: 947px) {
   .cloud {

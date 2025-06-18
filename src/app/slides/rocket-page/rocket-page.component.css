@@ -9,8 +9,7 @@
   left:0;
   right:0;
   bottom:0;
-  /*background: radial-gradient(circle,rgba(158, 128, 38, 1) 6%, rgba(3, 15, 107, 1) 45%);
-*/
+  /*background: radial-gradient(circle,rgba(158, 128, 38, 1) 6%, rgba(3, 15, 107, 1) 45%);*/
 }
 .jc-rocket-container{
   z-index:1;
@@ -95,50 +94,50 @@
 }
 .jc-stars:nth-child(2){
   left:25%;
-  animation-delay: 1s;
+  animation-delay: 0.1s;
 }
 .jc-stars:nth-child(3){
   height:15px;
   width:15px;
   left:42%;
-  animation-delay: 1.7s;
+  animation-delay: 0.7s;
 }
 .jc-stars:nth-child(4){
   left:66%;
-  animation-delay: 6.5s;
+  animation-delay: 1.5s;
 }
 .jc-stars:nth-child(5){
   left:59%;
-  animation-delay: 2.6s;
+  animation-delay: 0.6s;
 }
 .jc-stars:nth-child(6){
   left:74%;
-  animation-delay: 4.9s;
+  animation-delay: 1.9s;
 }
 .jc-stars:nth-child(7){
   height:15px;
   width:15px;
   left:105%;
-  animation-delay: 4s;
+  animation-delay: 1s;
 }
 .jc-stars:nth-child(8){
   left:125%;
-  animation-delay: 2.8s;
+  animation-delay: 1.8s;
 }
 .jc-stars:nth-child(9){
   left:131%;
-  animation-delay: 1.9s;
+  animation-delay: 0.2s;
 }
 .jc-stars:nth-child(10){
   left:145%;
-  animation-delay: 5.8s;
+  animation-delay: 1.2s;
 }
 @keyframes stars{
   0%{
     transform:translate(200px,-200px) rotate(0deg);
   }
   100%{
-    transform:translate(-700px,700px) rotate(270deg);
+    transform:translate(-700px,1200px) rotate(270deg);
   }
 }
 

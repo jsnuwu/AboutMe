@@ -4,12 +4,13 @@
     <li [class.active]="index === 2"><a href="#about">Über mich</a></li>
     <li [class.active]="index === 3"><a href="#hobbys">Hobbys</a></li>
 
-    <li [class.active]="index === 4"><a href="#doings">Aktuelle Tätigkeit</a></li>
-
-<li [class.active]="index === 5 || index === 6">
-      <a href="#projectNow">Derzeitige Projekte</a>
+    <li [class.active]="index === 4">
+      <a href="#doings">Aktuelle Tätigkeit</a>
     </li>
 
+    <li [class.active]="index === 5 || index === 6">
+      <a href="#projectNow">Derzeitige Projekte</a>
+    </li>
 
     <li [class.active]="index === 7 || index === 8 || index === 9">
       <a href="#sideprojects">Übungsprojekte</a>
@@ -18,7 +19,7 @@
       <a href="#oldprojects">vergangene Projekte</a>
     </li>
 
-        <li [class.active]="index === 13"><a href="#learnings">Erlerntes</a></li>
+    <li [class.active]="index === 13"><a href="#learnings">Erlerntes</a></li>
 
     <li [class.active]="index === 14"><a href="#future">Zukunftsziele</a></li>
     <li [class.active]="index === 15"><a href="#end">Ende</a></li>
@@ -26,7 +27,6 @@
 </nav>
 
 <div class="background" [ngClass]="{ 'doings-active': index === 4 }">
-
   <div class="scroll-container">
     <div class="page">
       <app-start-page></app-start-page>
@@ -46,8 +46,6 @@
         <app-hobbys></app-hobbys>
       </div>
     </div>
-
-
 
     <div class="page autoBlurLearningPage" id="doings">
       <div class="autoBlurReversed">
@@ -103,24 +101,17 @@
 
     <div class="autoBlurLearningPage page" id="learnings">
       <div class="autoBlurReversed">
-        <div class="slideUp">
           <app-learnings-page></app-learnings-page>
-        </div>
       </div>
     </div>
 
+    <div class="page" id="future">
+      <div class="future-wrapper" id="futureSection">
+        <app-futuer-plans-page></app-futuer-plans-page>
+        <app-rocket-transition targetSelector="#future"></app-rocket-transition>
+      </div>
+    </div>
 
-
-
-<div class="page" id="future">
-  <div class="future-wrapper" id="futureSection">
-    <app-futuer-plans-page></app-futuer-plans-page>
-    <app-rocket-transition targetSelector="#future"></app-rocket-transition>
-  </div>
-</div>
-
-
-    
     <div class="autoBlur">
       <div class="page autoshowPlanet" id="end">
         <app-end-page />

@@ -92,10 +92,10 @@ observeSections() {
             );
           } else if (newIndex === 14) {
             background.classList.add('future-active');
-background.style.setProperty(
-  '--bg-gradient',
-  'radial-gradient(circle at center, rgba(158, 128, 38, 1) 15%, rgba(3, 15, 107, 1) 60%)'
-);
+            background.style.setProperty(
+              '--bg-gradient',
+              'radial-gradient(circle at center, rgba(158, 128, 38, 1) 15%, rgba(3, 15, 107, 1) 60%)'
+            );
           } else {
             fadeOutTimeout = setTimeout(() => {
               background.style.setProperty('--bg-gradient', '');
