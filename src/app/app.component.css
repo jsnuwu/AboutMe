@@ -274,6 +274,6 @@ html {
   .autoBlur,
   .autoBlurReversed,
   .autoBlurLearningPage {
-    filter: none !important;
+    opacity: 0;
   }
 }
