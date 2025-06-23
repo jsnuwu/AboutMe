@@ -270,5 +270,10 @@ html {
   }
 }
 
-
-
+@media (max-width: 768px) {
+  .autoBlur,
+  .autoBlurReversed,
+  .autoBlurLearningPage {
+    filter: none !important;
+  }
+}
