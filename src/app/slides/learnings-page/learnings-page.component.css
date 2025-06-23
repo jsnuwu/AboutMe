@@ -119,38 +119,7 @@
   }
 }
 
-@media (max-width: 947px) {
-  .cloud {
-    flex-direction: column;
-    padding: 10px;
-  }
 
-  .clouds1 {
-    left: 8%;
-  }
-  .clouds2 {
-    left: 5%;
-  }
-  .clouds3 {
-    left: 4%;
-  }
-  .clouds4 {
-    top: 30%;
-    left: 54%;
-  }
-  .clouds5 {
-    left: 45%;
-  }
-  .clouds6 {
-    left: 50%;
-  }
-  .clouds7 {
-    left: 55%;
-  }
-  .clouds8 {
-    left: 15%;
-  }
-}
 
 .sky {
   position: absolute;
@@ -230,4 +199,37 @@
   z-index: -1;
   opacity: 0.5;
   pointer-events: none;
+}
+
+@media (max-width: 947px) {
+  .cloud {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .clouds1 {
+    left: 8%;
+  }
+  .clouds2 {
+    left: 5%;
+  }
+  .clouds3 {
+    left: 4%;
+  }
+  .clouds4 {
+    top: 30%;
+    left: 54%;
+  }
+  .clouds5 {
+    left: 45%;
+  }
+  .clouds6 {
+    left: 50%;
+  }
+  .clouds7 {
+    left: 55%;
+  }
+  .clouds8 {
+    left: 15%;
+  }
 }
