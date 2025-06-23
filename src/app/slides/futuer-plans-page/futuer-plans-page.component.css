@@ -31,7 +31,8 @@
   font-size: clamp(2.5rem, 6vw, 5.5rem);
   color: #fafafa;
   text-shadow: 0 0 10px #9e6fe2;
-  margin-bottom: 1rem;
+  margin-bottom: 15rem;
+  margin-top: -14rem;
 }
 
 .circles-container {
@@ -39,21 +40,19 @@
   flex-wrap: nowrap; 
   justify-content: center;
   align-items: center;
-  gap: clamp(3rem, 6vw, 10rem);
-  width: 100%;
+  gap: clamp(20rem, 40vw, 60rem);
+      width: 100%;
   max-width: 1000px;
 }
 
 .firstCircle,
-.secondCircle,
 .thirdCircle {
     flex: 0 0 clamp(300px, 30vw, 450px);
     height: clamp(300px, 30vw, 286px);
     width: clamp(300px, 30vw, 450px);
-background: radial-gradient(circle,rgba(158, 128, 38, 0) 0%, rgba(33, 51, 184, 0.31) 0%);
+    background: radial-gradient(circle,rgba(158, 128, 38, 0) 0%, rgba(33, 51, 184, 0.212) 0%);
     border-radius: 27px;
-    display: flex
-;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
