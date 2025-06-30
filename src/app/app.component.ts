@@ -13,7 +13,6 @@ import { ConwayComponent } from "./slides/old-projects/conway/conway.component";
 import { loadingComponent } from "./slides/old-projects/loading/loading.component";
 import { InvestmentcalculatorComponent } from "./slides/old-projects/investmentcalculator/investmentcalculator.component";
 import { TaskmanagerComponent } from "./slides/old-projects/taskmanager/taskmanager.component";
-import { RocketTransitionComponent } from "./rocket-transition/rocket-transition.component";
 import { EarthComponent } from "./slides/old-projects/earth/earth.component";
 
 
@@ -36,7 +35,6 @@ import { EarthComponent } from "./slides/old-projects/earth/earth.component";
     loadingComponent,
     InvestmentcalculatorComponent,
     TaskmanagerComponent,
-    RocketTransitionComponent,
     EarthComponent
 ],
   templateUrl: './app.component.html',
