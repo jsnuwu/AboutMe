@@ -8,21 +8,21 @@
       <a href="#doings">Aktuelle Tätigkeit</a>
     </li>
 
-    <li [class.active]="index === 5 || index === 6">
+    <li [class.active]="index === 5 || index === 6 || index === 7">
       <a href="#projectNow">Derzeitiges Projekte</a>
     </li>
 
-    <li [class.active]="index === 7 || index === 8 || index === 9">
+    <li [class.active]="index === 8 || index === 9 || index === 10">
       <a href="#sideprojects">Übungsprojekte</a>
     </li>
-    <li [class.active]="index === 10 || index === 11 || index === 12">
+    <li [class.active]="index === 11 || index === 12 || index === 13">
       <a href="#oldprojects">Vergangene Projekte</a>
     </li>
 
-    <li [class.active]="index === 13"><a href="#learnings">Erlerntes</a></li>
+    <li [class.active]="index === 14"><a href="#learnings">Erlerntes</a></li>
 
-    <li [class.active]="index === 14"><a href="#future">Zukunftsziele</a></li>
-    <li [class.active]="index === 15"><a href="#end">Ende</a></li>
+    <li [class.active]="index === 15"><a href="#future">Zukunftsziele</a></li>
+    <li [class.active]="index === 16"><a href="#end">Ende</a></li>
   </ul>
 </nav>
 
@@ -63,6 +63,10 @@
 
     <div class="page" id="clicker">
       <app-loading></app-loading>
+    </div>
+
+    <div class="page" id="earth">
+      <app-earth></app-earth>
     </div>
 
     <!-- Sidequest project -->

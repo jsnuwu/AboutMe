@@ -1,0 +1,21 @@
+.earth-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.earth-gif {
+    width: clamp(17rem, 90vw, 110rem);
+    border-radius: 2%;
+}
+
+.earth-title {
+    font-size: clamp(2.5rem, 5vw, 7rem);
+    color: #ffffff;
+    text-align: center;
+    max-width: 90vw;
+}
+
+

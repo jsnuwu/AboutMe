@@ -14,6 +14,7 @@ import { loadingComponent } from "./slides/old-projects/loading/loading.componen
 import { InvestmentcalculatorComponent } from "./slides/old-projects/investmentcalculator/investmentcalculator.component";
 import { TaskmanagerComponent } from "./slides/old-projects/taskmanager/taskmanager.component";
 import { RocketTransitionComponent } from "./rocket-transition/rocket-transition.component";
+import { EarthComponent } from "./slides/old-projects/earth/earth.component";
 
 
 @Component({
@@ -35,7 +36,8 @@ import { RocketTransitionComponent } from "./rocket-transition/rocket-transition
     loadingComponent,
     InvestmentcalculatorComponent,
     TaskmanagerComponent,
-    RocketTransitionComponent
+    RocketTransitionComponent,
+    EarthComponent
 ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
@@ -43,7 +45,7 @@ import { RocketTransitionComponent } from "./rocket-transition/rocket-transition
 export class AppComponent implements AfterViewInit {
   title = 'praesi';
   index = 0;
-  totalPages = 16;
+  totalPages = 17;
   observer!: IntersectionObserver;
   showSidebar = false; 
   
@@ -90,7 +92,7 @@ observeSections() {
               '--bg-gradient',
               'radial-gradient(circle at 70% 30%, #2447a5, transparent 90%)'
             );
-          } else if (newIndex === 14) {
+          } else if (newIndex === 15) {
             background.classList.add('future-active');
             background.style.setProperty(
               '--bg-gradient',
