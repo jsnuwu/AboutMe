@@ -18,4 +18,22 @@
     max-width: 90vw;
 }
 
+.autoshowPlanet {
+  animation: autoShowAnimationPlanet;
+  animation-timeline: view();
+}
 
+@keyframes autoShowAnimationPlanet {
+  0% {
+    opacity: 0;
+    transform: translateY(200px) scale(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

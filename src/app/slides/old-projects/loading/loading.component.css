@@ -67,8 +67,6 @@ width: clamp(20rem, 45vw, 60rem);
     }
 }
 
-
-
 .autoshowRight {
     animation: autoShowAnimationRight;
     animation-timeline: view();
