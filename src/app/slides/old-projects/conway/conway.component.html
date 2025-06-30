@@ -1,4 +1,6 @@
 <div class="conway-container autoshowRight">
     <h1 class="conway-title">Conways - <br>Spiel des Lebens</h1>
-    <img src="assets/images/old-projects/conway.gif" class="conway-gif">
+          <div class="tilt-wrapper" (mousemove)="onTilt($event)" (mouseleave)="onTiltLeave($event)">
+    <img src="assets/images/old-projects/conway.gif" class="conway-gif" #tiltImage>
 </div>
+      </div>

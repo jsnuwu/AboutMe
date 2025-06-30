@@ -22,9 +22,19 @@ width: clamp(20rem, 45vw, 60rem);
   display: block;
   border-radius: 1rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
-  max-width: 100%;
+  transition: transform 0.2s ease;
+    transform-style: preserve-3d;
+  will-change: transform;
+  border-radius: 1rem;  max-width: 100%;
 }
+
+.tilt-wrapper {
+  perspective: 1000px;
+  display: inline-block;
+  border-radius: 1rem;
+    transition: transform 0.2s ease;
+}
+
 
 .loading-title {
     font-size: clamp(2.5rem, 5vw, 7rem);

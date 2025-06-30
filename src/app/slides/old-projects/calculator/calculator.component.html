@@ -1,8 +1,8 @@
 
 <div class="calculator-container autoshowLeft">
-
-<img src="assets/images/old-projects/calculator.gif" class="calculator-gif">
-
+  <div class="tilt-wrapper" (mousemove)="onTilt($event)" (mouseleave)="onTiltLeave($event)">
+<img src="assets/images/old-projects/calculator.gif" class="calculator-gif"  #tiltImage>
+  </div>
 
 <h1 class="calculator-title"> Taschenrechner</h1>
 </div>

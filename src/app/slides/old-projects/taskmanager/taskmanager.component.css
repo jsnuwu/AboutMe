@@ -15,6 +15,9 @@
     transition: transform 0.3s ease;
     margin-right: clamp(1rem, 4vw, 8rem);
     max-width: 90vw;
+    transition: transform 0.2s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
 }
 
 .TaskManager-title {
@@ -39,3 +42,10 @@
         transform: translateX(0) scale(1);
     }
 }
+
+.tilt-wrapper {
+  perspective: 1000px;
+  display: inline-block;
+  border-radius: 1rem;
+}
+

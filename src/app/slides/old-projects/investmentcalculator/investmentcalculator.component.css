@@ -21,9 +21,17 @@
     display: block;
     border-radius: 1rem;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
     margin-left: clamp(0.5rem, 6vw, 10rem);
     max-width: 90vw;
+    transition: transform 0.2s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+.tilt-wrapper {
+  perspective: 1000px;
+  display: inline-block;
+  border-radius: 1rem;
 }
 
 .autoshowRight {

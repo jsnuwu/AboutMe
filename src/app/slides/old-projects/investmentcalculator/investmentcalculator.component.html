@@ -1,4 +1,6 @@
 <div class="InvestmentCalculator-container autoshowRight">
     <h1 class="InvestmentCalculator-title">Investment calculator</h1>
-    <img src="assets/images/old-projects/InvestmentCalculator.gif" class="InvestmentCalculator-gif">
+      <div class="tilt-wrapper" (mousemove)="onTilt($event)" (mouseleave)="onTiltLeave($event)">
+    <img src="assets/images/old-projects/InvestmentCalculator.gif" class="InvestmentCalculator-gif" #tiltImage>
+</div>
 </div>

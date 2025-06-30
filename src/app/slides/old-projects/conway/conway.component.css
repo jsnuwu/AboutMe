@@ -12,7 +12,7 @@
     color: #ffffff;
     margin-left: clamp(0.5rem, 3vw, 6rem);
     max-width: 90vw;
-    text-align: center; /* für kleine Screens sinnvoll */
+    text-align: center; 
 }
 
 .conway-gif {
@@ -24,6 +24,15 @@
     transition: transform 0.3s ease;
     margin-left: clamp(0.5rem, 6vw, 10rem);
     max-width: 90vw;
+        transition: transform 0.2s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+.tilt-wrapper {
+  perspective: 1000px;
+  display: inline-block;
+  border-radius: 1rem;
 }
 
 .autoshowRight {
