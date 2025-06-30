@@ -30,6 +30,7 @@
   background: rgba(255, 255, 255, 0.12);
 
   animation: fadeIn 1.5s ease-in forwards, floatCloud 3s ease-in-out infinite;
+  transition: background 0.4s ease-in-out;
 
   display: flex;
   align-items: center;
@@ -66,7 +67,8 @@
 }
 
 .cloud:hover {
-  background: rgba(255, 255, 255, 0.359);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.319);
   z-index: 20;
 }
 
@@ -85,8 +87,6 @@
     opacity: 0;
   }
 }
-
-
 
 .tech-icon {
   width: clamp(24px, 3vw, 32px);
