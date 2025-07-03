@@ -90,6 +90,14 @@ observeSections() {
               '--bg-gradient',
               'radial-gradient(circle at 70% 30%, #2447a5, transparent 90%)'
             );
+
+            } else if (newIndex === 7) {
+            background.classList.add('future-active');
+            background.style.setProperty(
+              '--bg-gradient',
+              'radial-gradient(circle at 70% 30%,rgb(12, 13, 14), transparent 90%)'
+            );
+
           } else if (newIndex === 15) {
             background.classList.add('future-active');
             background.style.setProperty(
