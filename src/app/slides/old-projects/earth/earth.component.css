@@ -36,7 +36,7 @@
     opacity: 0;
     transform: translateY(200px) scale(0);
   }
-  60% {
+  45% {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
