@@ -1,26 +1,33 @@
 .earth-container {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;    
-    justify-content: center;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
-.earth-gif {
-    width: clamp(17rem, 90vw, 110rem);
-    border-radius: 2%;
+.earth-iframe-wrapper {
+  width: 1620px;
+  height: 780px;
+  overflow: hidden;
+}
+
+.earth-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 .earth-title {
-    font-size: clamp(2.5rem, 5vw, 7rem);
-    color: #ffffff;
-    text-align: center;
-    max-width: 90vw;
+  font-size: clamp(2.5rem, 5vw, 7rem);
+  color: #ffffff;
+  text-align: center;
+  max-width: 90vw;
 }
 
 .autoshowPlanet {
-  animation: autoShowAnimationPlanet;
-  animation-timeline: view();
+  animation: autoShowAnimationPlanet 1s ease forwards;
+  animation-timeline: view(); 
 }
 
 @keyframes autoShowAnimationPlanet {
