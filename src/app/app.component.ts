@@ -15,7 +15,6 @@ import { InvestmentcalculatorComponent } from "./slides/old-projects/investmentc
 import { TaskmanagerComponent } from "./slides/old-projects/taskmanager/taskmanager.component";
 import { EarthComponent } from "./slides/old-projects/earth/earth.component";
 
-
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -47,7 +46,6 @@ export class AppComponent implements AfterViewInit {
   observer!: IntersectionObserver;
   showSidebar = false; 
   
-
   ngAfterViewInit() {
     this.scrollToSection(this.index);
     this.observeSections();
