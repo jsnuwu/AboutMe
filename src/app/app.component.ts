@@ -11,8 +11,6 @@ import { EndPageComponent } from "./slides/end-page/end-page.component";
 import { CalculatorComponent } from "./slides/old-projects/calculator/calculator.component";
 import { ConwayComponent } from "./slides/old-projects/conway/conway.component";
 import { loadingComponent } from "./slides/old-projects/loading/loading.component";
-import { InvestmentcalculatorComponent } from "./slides/old-projects/investmentcalculator/investmentcalculator.component";
-import { TaskmanagerComponent } from "./slides/old-projects/taskmanager/taskmanager.component";
 import { EarthComponent } from "./slides/old-projects/earth/earth.component";
 
 @Component({
@@ -32,8 +30,6 @@ import { EarthComponent } from "./slides/old-projects/earth/earth.component";
     ConwayComponent,
     loadingComponent,
     loadingComponent,
-    InvestmentcalculatorComponent,
-    TaskmanagerComponent,
     EarthComponent
 ],
   templateUrl: './app.component.html',
@@ -96,7 +92,7 @@ observeSections() {
               'radial-gradient(circle at 70% 30%,rgb(12, 13, 14), transparent 90%)'
             );
 
-          } else if (newIndex === 15) {
+          } else if (newIndex === 12) {
             background.classList.add('future-active');
             background.style.setProperty(
               '--bg-gradient',

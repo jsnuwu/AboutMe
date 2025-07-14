@@ -11,18 +11,14 @@
     <li [class.active]="index === 5 || index === 6 || index === 7">
       <a href="#projectNow">Derzeitige Projekte</a>
     </li>
-
     <li [class.active]="index === 8 || index === 9 || index === 10">
-      <a href="#sideprojects">Übungsprojekte</a>
-    </li>
-    <li [class.active]="index === 11 || index === 12 || index === 13">
       <a href="#oldprojects">Vergangene Projekte</a>
     </li>
 
-    <li [class.active]="index === 14"><a href="#learnings">Erlerntes</a></li>
+    <li [class.active]="index === 11"><a href="#learnings">Erlerntes</a></li>
 
-    <li [class.active]="index === 15"><a href="#future">Zukunftsziele</a></li>
-    <li [class.active]="index === 16"><a href="#end">Ende</a></li>
+    <li [class.active]="index === 12"><a href="#future">Zukunftsziele</a></li>
+    <li [class.active]="index === 13"><a href="#end">Ende</a></li>
   </ul>
 </nav>
 
@@ -67,24 +63,7 @@
     <div class="page" id="earth">
       <app-earth></app-earth>
     </div>
-
-    <!-- Sidequest project -->
-    <div class="page centered-content" id="sideprojects">
-      <div class="title-wrapper">
-        <div class="projects-title">
-          <h1 class="autoshowPlanet">Übungs&shy;projekte</h1>
-        </div>
-      </div>
-    </div>
-
-    <div class="page" id="taskmanager">
-      <app-taskmanager></app-taskmanager>
-    </div>
-
-    <div class="page" id="investmentcalculator">
-      <app-investmentcalculator></app-investmentcalculator>
-    </div>
-
+    
     <!-- Old Projects Section -->
     <div class="page centered-content" id="oldprojects">
       <div class="title-wrapper">
@@ -121,3 +100,13 @@
     </div>
   </div>
 </div>
+
+
+<!--
+Investment Calculator:
+calculiert investments
+berechnet, wie sich dein Geld über Zeit durch Zinsen, Rendite oder regelmäßige Einzahlungen vermehrt.
+
+Conways game of life:
+ist ein Simulationsspiel, bei dem Zellen auf einem Gitter je nach der Anzahl ihrer lebenden Nachbarn von Generation zu Generation leben, sterben oder neu entstehen.
+-->
