@@ -36,7 +36,7 @@
   width: 100%;
   max-width: 900px;
   margin-top: clamp(1rem, 4vw, 3rem);
-  padding-left: 3rem;     
+  padding-left: 2.5rem;     
   text-indent: -2.9rem;
 }
 
@@ -57,7 +57,7 @@
   aspect-ratio: 1 / 1;
   background: rgba(255, 255, 255, 0.1);
   border-radius: clamp(1rem, 2vw, 2rem);
-  padding: clamp(0.8rem, 1.5vw, 1.5rem);
+  padding: clamp(1rem, 2vw, 2rem);
   box-sizing: border-box;
 }
 
@@ -72,7 +72,7 @@
 }
 
 .angular-icon {
-  max-width: 40%;
+  max-width: 38%;
   height: auto;
   margin-bottom: -1rem;
 }
@@ -80,7 +80,7 @@
 .doings-text {
   font-size: clamp(0.9rem, 1.5vw, 1.2rem);
   line-height: 1.6;
-    color: #ccc;
+  color: #ccc;
   max-width: 600px;
   margin-top: clamp(1rem, 3vw, 2rem);
 }
