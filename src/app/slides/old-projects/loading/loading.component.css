@@ -12,9 +12,14 @@
   flex-wrap: wrap;
   gap: clamp(1rem, 2vw, 3rem);
   justify-content: center;
-  
+
 }
 
+.tilt-wrapper {
+  perspective: 1000px;
+  display: inline-block;
+  border-radius: 1rem;
+}
 
 .clicker-gif {
 width: clamp(20rem, 45vw, 60rem); 
@@ -26,13 +31,6 @@ width: clamp(20rem, 45vw, 60rem);
     transform-style: preserve-3d;
   will-change: transform;
   border-radius: 1rem;  max-width: 100%;
-}
-
-.tilt-wrapper {
-  perspective: 1000px;
-  display: inline-block;
-  border-radius: 1rem;
-    transition: transform 0.2s ease;
 }
 
 
