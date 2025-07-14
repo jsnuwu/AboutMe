@@ -38,7 +38,7 @@ import { EarthComponent } from "./slides/old-projects/earth/earth.component";
 export class AppComponent implements AfterViewInit {
   title = 'praesi';
   index = 0;
-  totalPages = 17;
+  totalPages = 14;
   observer!: IntersectionObserver;
   showSidebar = false; 
   
